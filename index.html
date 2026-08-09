@@ -1,0 +1,1705 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An image-first interactive reference guide to myofascial meridians, trigger points, convergence zones, and common pain patterns.">
+<title>The Complete Fascia Reference Guide</title>
+<link rel="preload" as="image" href="assets/overview.webp">
+<style>
+:root{
+  --ink:#182126; --ink-soft:#425058; --muted:#6f7a80; --paper:#f4f1ea; --card:#fffdf8;
+  --line:#ddd7ca; --blue:#426f9f; --red:#c9564c; --green:#4f9273; --gold:#c99a37;
+  --purple:#7b67a8; --orange:#cf7a3f; --teal:#3b8b8f; --shadow:0 24px 70px rgba(24,33,38,.11);
+  --radius:28px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 10% 0%,rgba(66,111,159,.12),transparent 34%),radial-gradient(circle at 90% 18%,rgba(201,86,76,.09),transparent 30%),linear-gradient(rgba(24,33,38,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(24,33,38,.025) 1px,transparent 1px);background-size:auto,auto,34px 34px,34px 34px;z-index:-2}
+a{color:inherit} img{display:block;max-width:100%} button,input{font:inherit} ::selection{background:#d8e7f3}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--blue),var(--red),var(--gold));z-index:1000}
+.topbar{position:sticky;top:0;z-index:900;backdrop-filter:blur(18px);background:rgba(244,241,234,.84);border-bottom:1px solid rgba(24,33,38,.09)}
+.topbar-inner{max-width:1480px;margin:auto;padding:12px 22px;display:flex;gap:16px;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;letter-spacing:-.02em}.brand-mark{width:34px;height:34px;border-radius:12px;background:conic-gradient(from 180deg,var(--blue),var(--teal),var(--red),var(--blue));box-shadow:inset 0 0 0 6px rgba(255,255,255,.55)}
+.toplinks{display:flex;gap:4px;align-items:center;overflow:auto;scrollbar-width:none}.toplinks a{white-space:nowrap;text-decoration:none;color:var(--ink-soft);font-size:.84rem;font-weight:750;padding:8px 10px;border-radius:999px}.toplinks a:hover,.toplinks a:focus-visible{background:#fff;color:var(--ink)}
+.hero{max-width:1480px;margin:0 auto;padding:72px 22px 40px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);gap:34px;align-items:end}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:850;text-transform:uppercase;letter-spacing:.13em;font-size:.76rem}.eyebrow::before{content:"";width:32px;height:2px;background:currentColor;border-radius:2px}
+h1{font-size:clamp(3rem,7vw,7.6rem);line-height:.88;letter-spacing:-.075em;margin:18px 0 22px;max-width:950px}.hero-lede{font-size:clamp(1.08rem,1.8vw,1.35rem);line-height:1.58;color:var(--ink-soft);max-width:800px;margin:0 0 28px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.button{border:0;border-radius:999px;padding:13px 18px;text-decoration:none;font-weight:850;display:inline-flex;align-items:center;gap:9px;cursor:pointer}.button.primary{background:var(--ink);color:#fff;box-shadow:0 10px 30px rgba(24,33,38,.18)}.button.secondary{background:#fffdf8;border:1px solid var(--line);color:var(--ink)}
+.hero-panel{background:linear-gradient(145deg,#202b31,#11191d);border-radius:34px;color:#fff;padding:28px;box-shadow:var(--shadow);position:relative;overflow:hidden;min-height:360px}.hero-panel::before{content:"";position:absolute;inset:-30%;background:radial-gradient(circle at 30% 20%,rgba(93,158,206,.38),transparent 25%),radial-gradient(circle at 80% 70%,rgba(201,86,76,.24),transparent 30%);}
+.hero-panel-content{position:relative;z-index:1}.hero-panel img{border-radius:22px;background:#f8f7f2;padding:16px;box-shadow:0 18px 45px rgba(0,0,0,.25)}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:14px}.stat strong{display:block;font-size:1.7rem;line-height:1}.stat span{font-size:.8rem;color:rgba(255,255,255,.72)}
+.control-strip{max-width:1480px;margin:0 auto 34px;padding:0 22px;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center}.search{position:relative}.search input{width:100%;border:1px solid var(--line);border-radius:999px;background:#fffdf8;padding:15px 20px 15px 48px;box-shadow:0 10px 35px rgba(24,33,38,.06);outline:none}.search input:focus{border-color:var(--blue);box-shadow:0 0 0 4px rgba(66,111,159,.13)}.search svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.quick-jump{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.quick-jump a{font-size:.82rem;font-weight:800;text-decoration:none;background:#fffdf8;border:1px solid var(--line);border-radius:999px;padding:10px 12px;color:var(--ink-soft)}
+.main{max-width:1480px;margin:auto;padding:0 22px 80px}.part-heading{margin:78px 0 24px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}.part-number{width:58px;height:58px;border-radius:20px;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:900;font-size:.95rem}.part-heading h2{font-size:clamp(1.8rem,3.5vw,3.2rem);letter-spacing:-.045em;margin:0}.part-heading p{margin:5px 0 0;color:var(--muted);max-width:760px}
+.guide-section{background:rgba(255,253,248,.9);border:1px solid rgba(24,33,38,.09);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(18px,3vw,34px);margin:0 0 34px;scroll-margin-top:92px;position:relative;overflow:hidden}.guide-section::before{content:"";position:absolute;top:0;left:0;right:0;height:7px;background:var(--accent)}
+.section-head{display:flex;justify-content:space-between;gap:20px;align-items:start;margin-bottom:22px}.section-kicker{color:var(--accent);font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:.74rem}.section-head h3{font-size:clamp(1.8rem,3vw,3rem);letter-spacing:-.05em;line-height:1.02;margin:7px 0 10px}.section-summary{max-width:900px;color:var(--ink-soft);font-size:1.03rem;margin:0}.section-count{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 12px;font-weight:900;color:var(--muted);font-size:.8rem}
+.section-layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(340px,.65fr);gap:24px;align-items:start}.visual-frame{margin:0;min-width:0}.image-shell{position:relative;background:#f9f8f4;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(255,255,255,.7)}.image-shell::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.24),transparent 30%,transparent 70%,rgba(24,33,38,.035))}.image-shell img{width:100%;height:100%;object-fit:cover}.image-shell.landscape{aspect-ratio:16/10}.image-shell.portrait{aspect-ratio:4/5}.image-shell.square{aspect-ratio:1/1}
+.hotspot{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);z-index:5;width:34px;height:34px;border-radius:999px;border:3px solid #fff;background:var(--accent);color:#fff;font-weight:950;font-size:.82rem;display:grid;place-items:center;box-shadow:0 8px 20px rgba(24,33,38,.24);cursor:pointer;transition:transform .18s ease,background .18s ease}.hotspot::after{content:"";position:absolute;inset:-8px;border:1px solid var(--accent);border-radius:inherit;opacity:.45;animation:pulse 2.4s infinite}.hotspot:hover,.hotspot.active,.hotspot:focus-visible{transform:translate(-50%,-50%) scale(1.18);background:var(--ink);outline:none}.hotspot.link::before{content:"↗";position:absolute;right:-7px;top:-9px;font-size:.66rem;background:#fff;color:var(--ink);border-radius:50%;width:17px;height:17px;display:grid;place-items:center;box-shadow:0 4px 10px rgba(0,0,0,.15)}@keyframes pulse{0%{transform:scale(.78);opacity:.55}70%{transform:scale(1.2);opacity:0}100%{opacity:0}}
+.expand{position:absolute;right:12px;bottom:12px;z-index:8;border:0;border-radius:999px;background:rgba(24,33,38,.88);color:#fff;padding:9px 12px;font-weight:850;font-size:.78rem;cursor:pointer;backdrop-filter:blur(8px)}
+figcaption{display:flex;justify-content:space-between;gap:14px;color:var(--muted);font-size:.78rem;margin-top:10px;padding:0 4px}.annotation-panel{position:sticky;top:82px;min-width:0}.active-card{background:var(--ink);color:#fff;border-radius:22px;padding:22px;box-shadow:0 18px 45px rgba(24,33,38,.16);min-height:188px}.active-card .number{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:12px;background:var(--accent);font-weight:950;margin-bottom:14px}.active-card h4{font-size:1.35rem;letter-spacing:-.025em;line-height:1.1;margin:0 0 9px}.active-card p{margin:0;color:rgba(255,255,255,.76)}
+.annotation-list{display:grid;gap:8px;margin:16px 0}.annotation-item{border:1px solid var(--line);background:#fff;border-radius:15px;padding:11px 12px;display:grid;grid-template-columns:30px 1fr;gap:10px;text-align:left;cursor:pointer;color:var(--ink-soft)}.annotation-item span:first-child{width:28px;height:28px;border-radius:10px;background:color-mix(in srgb,var(--accent) 14%,white);color:var(--accent);display:grid;place-items:center;font-weight:950;font-size:.75rem}.annotation-item strong{font-size:.88rem;line-height:1.25}.annotation-item.active,.annotation-item:hover{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 7%,white);color:var(--ink)}
+.pathway{border-left:4px solid var(--accent);background:#fff;border-radius:0 16px 16px 0;padding:14px 16px;color:var(--ink-soft);font-size:.92rem;margin:14px 0}.pathway strong{display:block;color:var(--ink);font-size:.76rem;text-transform:uppercase;letter-spacing:.11em;margin-bottom:5px}
+details{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}summary{cursor:pointer;list-style:none;padding:15px 17px;font-weight:900;display:flex;justify-content:space-between;align-items:center}summary::-webkit-details-marker{display:none}summary::after{content:"+";font-size:1.4rem;color:var(--accent)}details[open] summary::after{content:"−"}.notes{padding:0 18px 18px;color:var(--ink-soft);font-size:.92rem}.notes p{margin:.65rem 0}.notes ul{margin:.5rem 0 .7rem;padding-left:1.25rem}.notes li{margin:.45rem 0}.notes blockquote{border-left:4px solid var(--accent);margin:10px 0;padding:8px 0 8px 16px;font-size:1.1rem;color:var(--ink);font-weight:750}.notes table{width:100%;border-collapse:collapse;font-size:.82rem;margin:10px 0}.notes th{text-align:left;color:var(--ink);background:#f3efe6}.notes th,.notes td{padding:9px;border:1px solid #e5dfd3;vertical-align:top}
+.legend-visual{border:1px solid var(--line);background:linear-gradient(145deg,#202b31,#11191d);border-radius:24px;min-height:560px;color:#fff;padding:28px;position:relative;overflow:hidden}.legend-visual::before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 25% 20%,rgba(66,111,159,.45),transparent 26%),radial-gradient(circle at 80% 75%,rgba(201,86,76,.28),transparent 30%)}.legend-content{position:relative;z-index:1;height:100%;display:grid;align-content:center;gap:22px}.legend-demo{position:relative;min-height:260px;border:1px solid rgba(255,255,255,.14);border-radius:22px;background:rgba(255,255,255,.06);overflow:hidden}.legend-line{position:absolute;left:15%;right:15%;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--red),var(--gold));transform:rotate(-18deg);top:48%}.legend-dot{position:absolute;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:950;border:3px solid #fff;box-shadow:0 10px 25px rgba(0,0,0,.25)}.legend-dot.one{left:22%;top:31%;background:var(--blue)}.legend-dot.two{left:48%;top:44%;background:var(--red)}.legend-dot.three{left:72%;top:58%;background:var(--gold)}.legend-label{position:absolute;background:#fff;color:var(--ink);border-radius:14px;padding:10px 12px;font-size:.82rem;font-weight:850;box-shadow:0 12px 30px rgba(0,0,0,.2)}.legend-label.a{left:7%;top:12%}.legend-label.b{left:40%;top:74%}.legend-label.c{right:6%;top:15%}.legend-caption{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.legend-caption div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:13px}.legend-caption strong{display:block}.legend-caption span{font-size:.8rem;color:rgba(255,255,255,.67)}
+.index-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}.index-card{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}.index-card:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(24,33,38,.12)}.index-card .thumb{aspect-ratio:4/3;background:#f8f7f2}.index-card img{width:100%;height:100%;object-fit:cover}.index-card .meta{padding:13px}.index-card small{color:var(--accent);font-weight:900;text-transform:uppercase;letter-spacing:.09em}.index-card strong{display:block;margin-top:4px;line-height:1.25}.index-card span{display:block;margin-top:6px;color:var(--muted);font-size:.78rem}
+.source-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px}.source-visual{border-radius:24px;overflow:hidden;border:1px solid var(--line);background:#f8f7f2;display:grid;grid-template-columns:1fr 1fr}.source-visual img{width:100%;height:100%;object-fit:cover;min-height:210px}.source-visual img:first-child{grid-row:span 2}.source-cards{display:grid;gap:12px}.source-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}.source-card strong{display:block;margin-bottom:5px}.source-card p{margin:0;color:var(--ink-soft);font-size:.9rem}.disclaimer{margin-top:22px;background:#fff8e8;border:1px solid #ead69f;border-radius:20px;padding:18px;color:#6c5521}.rights{margin-top:12px;background:#eef5f7;border:1px solid #cfdfe4;border-radius:20px;padding:18px;color:#37545e}
+.footer{max-width:1480px;margin:0 auto;padding:34px 22px 60px;color:var(--muted);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.backtop{position:fixed;right:18px;bottom:18px;z-index:800;width:44px;height:44px;border:0;border-radius:16px;background:var(--ink);color:#fff;font-size:1.3rem;cursor:pointer;box-shadow:0 12px 30px rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:.2s}.backtop.show{opacity:1;pointer-events:auto}
+.lightbox{position:fixed;inset:0;background:rgba(12,17,20,.9);z-index:1200;display:none;align-items:center;justify-content:center;padding:28px}.lightbox.open{display:flex}.lightbox figure{max-width:min(1200px,96vw);max-height:92vh;margin:0;background:#f8f7f2;border-radius:24px;padding:16px;position:relative}.lightbox img{max-width:100%;max-height:82vh;object-fit:contain;border-radius:16px}.lightbox figcaption{color:var(--ink-soft);padding:12px 4px 0;margin:0}.lightbox-close{position:absolute;top:-16px;right:-16px;width:42px;height:42px;border:0;border-radius:50%;background:#fff;color:var(--ink);font-size:1.3rem;cursor:pointer;box-shadow:0 10px 25px rgba(0,0,0,.25)}
+.hidden-by-search{display:none!important}.empty-search{display:none;background:#fff;border:1px dashed var(--line);border-radius:22px;padding:30px;text-align:center;color:var(--muted)}
+@media (max-width:1100px){.hero{grid-template-columns:1fr}.section-layout{grid-template-columns:1fr}.annotation-panel{position:static}.source-layout{grid-template-columns:1fr}.toplinks{display:none}}
+@media (max-width:720px){.hero{padding-top:46px}.hero-stats{grid-template-columns:1fr}.control-strip{grid-template-columns:1fr}.quick-jump{justify-content:flex-start}.section-head{display:block}.section-count{display:inline-block;margin-top:12px}.hotspot{width:30px;height:30px;font-size:.72rem}.legend-caption{grid-template-columns:1fr}.part-heading{grid-template-columns:1fr}.hero-panel{padding:18px}.guide-section{border-radius:22px}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+@media print{.topbar,.control-strip,.backtop,.expand,.lightbox,.progress{display:none}.guide-section{box-shadow:none;break-inside:avoid}.annotation-panel{position:static}.section-layout{grid-template-columns:1fr}.notes details{display:block}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top" aria-label="Fascia Reference Guide home"><span class="brand-mark"></span><span>Fascia Reference</span></a>
+    <nav class="toplinks" aria-label="Primary guide navigation">
+      <a href="#complete-map">Map</a><a href="#sbl">Meridians</a><a href="#plantar-fasciitis">Symptoms</a><a href="#thoracolumbar-fascia">Convergence</a><a href="#fascial-sliding">Glide</a><a href="#release-techniques">Practice</a><a href="#image-index">Image index</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <section class="hero" aria-labelledby="page-title">
+    <div>
+      <div class="eyebrow">Interactive anatomical reference</div>
+      <h1 id="page-title">The Complete Fascia Reference Guide</h1>
+      <p class="hero-lede">A visual guide to myofascial meridians, trigger points, convergence zones, and common pain patterns. Every section leads with an annotated image; the text supports the image rather than replacing it.</p>
+      <div class="hero-actions"><a class="button primary" href="#complete-map">Explore the map <span aria-hidden="true">→</span></a><a class="button secondary" href="#plantar-fasciitis">Find a symptom</a></div>
+    </div>
+    <div class="hero-panel" aria-label="Guide overview">
+      <div class="hero-panel-content">
+        <img src="assets/overview.webp" alt="Overview of the major myofascial meridians">
+        <div class="hero-stats"><div class="stat"><strong>8</strong><span>mapped line views</span></div><div class="stat"><strong>5</strong><span>convergence zones</span></div><div class="stat"><strong>27</strong><span>annotated sections</span></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="control-strip" aria-label="Guide controls">
+    <label class="search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m21 21-4.7-4.7m1.7-5.3a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="search" type="search" placeholder="Search lines, symptoms, muscles, or regions…" aria-label="Search the guide"></label>
+    <div class="quick-jump" aria-label="Quick links"><a href="#sbl">SBL</a><a href="#sfl">SFL</a><a href="#deep-front-line">DFL</a><a href="#low-back-pain">Low back</a><a href="#tension-headaches">Headaches</a><a href="#thoracolumbar-fascia">TLF</a></div>
+  </section>
+  <div class="main"><div id="sections"></div><div class="empty-search" id="empty-search">No matching sections. Try a broader anatomical term.</div>
+    <section class="guide-section" id="image-index" style="--accent:#426f9f">
+      <div class="section-head"><div><div class="section-kicker">Part 7 · Visual archive</div><h3>Image Index</h3><p class="section-summary">The complete set of purpose-built visual assets. Select any image to jump to the section where it is used.</p></div><div class="section-count">26 assets</div></div>
+      <div class="index-grid" id="image-index-grid"></div>
+    </section>
+    <section class="guide-section" id="references" style="--accent:#68737d">
+      <div class="section-head"><div><div class="section-kicker">References & evidence</div><h3>Sources, Scope & Disclaimer</h3><p class="section-summary">The guide synthesizes established anatomy, the Anatomy Trains model, trigger-point references, and emerging fascia research.</p></div><div class="section-count">Evidence scope</div></div>
+      <div class="source-layout">
+        <div class="source-visual" aria-label="Representative guide visuals"><img src="assets/fascial-sliding.webp" alt="Fascial layers"><img src="assets/overview.webp" alt="Myofascial meridians"><img src="assets/tension-headaches.webp" alt="Trigger point referral patterns"></div>
+        <div class="source-cards">
+          <div class="source-card"><strong>Anatomy Trains — Myers, 4th Edition</strong><p>Proposed myofascial-meridian framework used to organize line-based reasoning.</p></div>
+          <div class="source-card"><strong>Wilke et al. (2016)</strong><p>Metastudy examining anatomical continuity of proposed myofascial meridians.</p></div>
+          <div class="source-card"><strong>Myofascial-release systematic reviews</strong><p>Evidence summarized for chronic low-back pain and fibromyalgia, with attention to quality limitations.</p></div>
+          <div class="source-card"><strong>Emerging fascia research</strong><p>Hyaluronan, mechanotransduction, force transmission, and fascial-layer sliding.</p></div>
+          <div class="source-card"><strong>Travell & Simons’ Trigger Point Manual</strong><p>Established reference for trigger-point locations and referral maps.</p></div>
+        </div>
+      </div>
+      <div class="disclaimer"><strong>Medical disclaimer:</strong> The Anatomy Trains model is a proposed clinical framework rather than universally established anatomical doctrine. This guide is for reference and education only and is not a substitute for diagnosis or treatment by a qualified healthcare professional.</div>
+      <div class="rights"><strong>Image-use note:</strong> Every illustration on this page is an original, purpose-built artwork created for this guide in a single consistent clinical style, with all labels and annotations kept as live text so they remain accurate, searchable, and selectable. No third-party source images are reproduced, so the page is clear for public hosting.</div>
+    </section>
+  </div>
+</main>
+<footer class="footer"><div>Compiled August 2026 · Image-first fascia reference</div><div>Built for anatomical cross-referencing and clinical reasoning support.</div></footer>
+<button class="backtop" id="backtop" aria-label="Back to top">↑</button>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded image"><figure><button class="lightbox-close" id="lightbox-close" aria-label="Close image">×</button><img id="lightbox-img" src="" alt=""><figcaption id="lightbox-caption"></figcaption></figure></div>
+<script id="section-data" type="application/json">[
+ {
+  "id": "how-to-use",
+  "part": "Orientation",
+  "kicker": "Guide orientation",
+  "title": "How to Use This Guide",
+  "accent": "#2f6f8f",
+  "type": "legend",
+  "summary": "Use the images as the primary map. Each numbered marker opens the corresponding anatomical or clinical note; supporting evidence and longer reference text remain available without competing with the visual.",
+  "notes": " <div class=\"legend-grid\"><div><strong>Established anatomy</strong><p>Verified through dissection, imaging, and peer-reviewed research.</p></div><div><strong>Proposed therapeutic model</strong><p>Based on the Anatomy Trains framework and emerging clinical hypotheses. Useful for reasoning, but not universal anatomical doctrine.</p></div><div><strong>Hotspots</strong><p>Numbered markers identify stations, convergence zones, or symptom-relevant structures.</p></div><div><strong>Clinical scope</strong><p>This is a reference and cross-referencing tool—not a replacement for medical diagnosis.</p></div></div>"
+ },
+ {
+  "id": "complete-map",
+  "part": "Part 1 · The Complete Map",
+  "kicker": "All lines together",
+  "title": "The Complete Myofascial Map",
+  "accent": "#426f9f",
+  "image": "overview.webp",
+  "orientation": "landscape",
+  "alt": "Eight full-body diagrams showing the major myofascial meridians in sequence",
+  "summary": "The major lines are shown as continuous myofascial pathways rather than isolated muscles. Use this map to locate a line, then jump directly to its detailed section.",
+  "pathway": "Posterior → anterior → lateral → spiral → arm → deep front → functional lines",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 7.5,
+    "y": 45.84,
+    "title": "Superficial Back Line",
+    "text": "Posterior chain from plantar fascia to scalp.",
+    "target": "sbl"
+   },
+   {
+    "n": 2,
+    "x": 17.5,
+    "y": 45.84,
+    "title": "Superficial Front Line",
+    "text": "Anterior chain from dorsal foot to mastoid.",
+    "target": "sfl"
+   },
+   {
+    "n": 3,
+    "x": 26.5,
+    "y": 45.84,
+    "title": "Lateral Line",
+    "text": "Side-body chain from lateral foot to skull.",
+    "target": "lateral-line"
+   },
+   {
+    "n": 4,
+    "x": 39.0,
+    "y": 45.84,
+    "title": "Spiral Line",
+    "text": "Helical crossing pattern through torso and legs.",
+    "target": "spiral-line"
+   },
+   {
+    "n": 5,
+    "x": 49.5,
+    "y": 45.84,
+    "title": "Arm Lines",
+    "text": "Four pathways connecting axial skeleton to fingers.",
+    "target": "arm-lines"
+   },
+   {
+    "n": 6,
+    "x": 60.0,
+    "y": 45.84,
+    "title": "Deep Front Line",
+    "text": "Deep core pathway from neck flexors to medial arch.",
+    "target": "deep-front-line"
+   },
+   {
+    "n": 7,
+    "x": 73.0,
+    "y": 45.84,
+    "title": "Functional Lines",
+    "text": "Diagonal force-transfer lines across the torso.",
+    "target": "functional-lines"
+   },
+   {
+    "n": 8,
+    "x": 89.0,
+    "y": 45.84,
+    "title": "Convergence Zones",
+    "text": "Regions where multiple lines overlap and tension can anchor.",
+    "target": "thoracolumbar-fascia"
+   }
+  ],
+  "notes": "<ul><li><strong>Thoracolumbar fascia:</strong> SBL, Spiral Line, Back Functional Line, and Deep Front Line interface.</li><li><strong>Sacrum / sacrotuberous ligament:</strong> SBL, Spiral Line, and Deep Front Line.</li><li><strong>Scalenes / SCM region:</strong> SFL, Lateral Line, Deep Front Line, and Arm Lines.</li><li><strong>Plantar fascia / calcaneus:</strong> SBL, Deep Front Line, and Lateral Line.</li><li><strong>Pelvic floor / psoas interface:</strong> Deep Front Line, SFL, Spiral Line, and Functional Lines.</li><li><strong>Suboccipital region:</strong> SBL, Deep Front Line, and Spiral Line.</li></ul>"
+ },
+ {
+  "id": "sbl",
+  "part": "Part 2 · Primary Meridians",
+  "kicker": "Primary meridian 01",
+  "title": "Superficial Back Line",
+  "accent": "#3f76b5",
+  "image": "sbl.webp",
+  "orientation": "landscape",
+  "alt": "Posterior, lateral, and anterior anatomical views of the Superficial Back Line",
+  "summary": "A continuous posterior fascial sheet running from the plantar fascia through the calves, hamstrings, sacrum, spinal fascia, and scalp to the brow ridge.",
+  "pathway": "Plantar fascia → Achilles → gastrocnemius → hamstrings → sacrotuberous ligament → erector spinae → thoracolumbar fascia → galea → brow ridge",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 20.5,
+    "y": 14.73,
+    "title": "Epicranial fascia / galea",
+    "text": "Continuation across the scalp; tension may present across the forehead."
+   },
+   {
+    "n": 2,
+    "x": 20.8,
+    "y": 20.05,
+    "title": "Suboccipitals",
+    "text": "Base-of-skull headaches and forward-head compensation."
+   },
+   {
+    "n": 3,
+    "x": 20.0,
+    "y": 33.56,
+    "title": "Erector spinae",
+    "text": "Paraspinal guarding and extension dysfunction."
+   },
+   {
+    "n": 4,
+    "x": 20.0,
+    "y": 45.84,
+    "title": "Thoracolumbar fascia",
+    "text": "Major convergence zone and low-back pain anchor."
+   },
+   {
+    "n": 5,
+    "x": 21.0,
+    "y": 53.21,
+    "title": "Sacrotuberous ligament",
+    "text": "Sacral pain and SI-region tension; links pelvis to hamstrings."
+   },
+   {
+    "n": 6,
+    "x": 19.5,
+    "y": 63.04,
+    "title": "Hamstrings",
+    "text": "Forward pelvic-tilt restriction and posterior-chain pull."
+   },
+   {
+    "n": 7,
+    "x": 20.0,
+    "y": 77.78,
+    "title": "Achilles / gastrocnemius",
+    "text": "Calf tightness and limited dorsiflexion."
+   },
+   {
+    "n": 8,
+    "x": 22.0,
+    "y": 86.78,
+    "title": "Plantar fascia",
+    "text": "Terminal station; heel pain and first-step pain."
+   }
+  ],
+  "notes": "<p><strong>Established anatomy:</strong> Cadaveric studies support morphological continuity along this posterior pathway.</p><table><thead><tr><th>Location</th><th>Symptom connection</th></tr></thead><tbody><tr><td>Plantar fascia</td><td>Heel pain; first-step pain</td></tr><tr><td>Achilles / gastrocnemius</td><td>Calf tightness; limited dorsiflexion</td></tr><tr><td>Hamstrings</td><td>Pelvic-position restriction; low-back pull</td></tr><tr><td>Sacrotuberous ligament</td><td>Sacral pain; SI-region dysfunction</td></tr><tr><td>Thoracolumbar fascia</td><td>Major convergence zone; low-back anchor</td></tr><tr><td>Erector spinae</td><td>Paraspinal guarding; extension dysfunction</td></tr><tr><td>Suboccipitals</td><td>Base-of-skull headaches; forward-head posture</td></tr><tr><td>Galea / frontalis</td><td>Tension across forehead</td></tr></tbody></table>"
+ },
+ {
+  "id": "sfl",
+  "part": "Part 2 · Primary Meridians",
+  "kicker": "Primary meridian 02",
+  "title": "Superficial Front Line",
+  "accent": "#c9564c",
+  "image": "sfl.webp",
+  "orientation": "landscape",
+  "alt": "Anterior, posterior, and lateral anatomical views of the Superficial Front Line",
+  "summary": "The anterior fascial chain from the dorsal toe extensors through the shin, quadriceps, abdomen, sternum, and SCM to the mastoid process.",
+  "pathway": "Toes → tibialis anterior → quadriceps → rectus abdominis → sternum → SCM → mastoid process",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 20.5,
+    "y": 18.01,
+    "title": "SCM / mastoid",
+    "text": "Temporal, cheek, ear, and top-of-head referral patterns."
+   },
+   {
+    "n": 2,
+    "x": 19.0,
+    "y": 26.19,
+    "title": "Sternal fascia",
+    "text": "Chest collapse and rib-cage depression."
+   },
+   {
+    "n": 3,
+    "x": 19.5,
+    "y": 36.84,
+    "title": "Rectus abdominis",
+    "text": "Anterior trunk shortening; links ribs to pelvis."
+   },
+   {
+    "n": 4,
+    "x": 19.0,
+    "y": 59.76,
+    "title": "Quadriceps / subpatellar tendon",
+    "text": "Anterior knee tension and hip-flexor influence."
+   },
+   {
+    "n": 5,
+    "x": 18.5,
+    "y": 74.5,
+    "title": "Tibialis anterior",
+    "text": "Shin tension and dorsiflexion limitation."
+   },
+   {
+    "n": 6,
+    "x": 18.0,
+    "y": 85.96,
+    "title": "Dorsal foot / toe extensors",
+    "text": "Toe clawing and anterior ankle restriction."
+   }
+  ],
+  "notes": "<p><strong>Established anatomy:</strong> Anterior compartment fascial chain from toe extensors to SCM.</p><p><strong>Proposed model:</strong> Hip-flexor and abdominal shortening can draw the rib cage down, requiring neck extension to keep the eyes level.</p><table><thead><tr><th>Location</th><th>Symptom connection</th></tr></thead><tbody><tr><td>Dorsal foot / toe extensors</td><td>Toe clawing; ankle dorsiflexion limitation</td></tr><tr><td>Tibialis anterior / subpatellar tendon</td><td>Anterior knee pain; shin tension</td></tr><tr><td>Rectus abdominis / sternal fascia</td><td>Rib-cage depression; chest collapse</td></tr><tr><td>SCM sternal division</td><td>Temporal headache; cheek/TMJ pain; dizziness</td></tr><tr><td>SCM clavicular division</td><td>Ear pain; top-of-head headache; autonomic symptoms</td></tr></tbody></table>"
+ },
+ {
+  "id": "lateral-line",
+  "part": "Part 2 · Primary Meridians",
+  "kicker": "Primary meridian 03",
+  "title": "Lateral Line",
+  "accent": "#4f9273",
+  "image": "lateral.webp",
+  "orientation": "landscape",
+  "alt": "Lateral, posterior, and anterior anatomical views of the Lateral Line",
+  "summary": "A side-body pathway from the lateral foot through the peroneals, IT band, hip abductors, obliques, intercostals, and scalenes to the skull.",
+  "pathway": "Lateral foot → peroneals → IT band → TFL / gluteus medius → external obliques → intercostals → scalenes → skull",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 18.5,
+    "y": 14.73,
+    "title": "Scalenes / skull",
+    "text": "Side-bending restriction and thoracic-outlet-type symptoms."
+   },
+   {
+    "n": 2,
+    "x": 19.0,
+    "y": 28.65,
+    "title": "Intercostals",
+    "text": "Rib mobility and breathing asymmetry."
+   },
+   {
+    "n": 3,
+    "x": 18.0,
+    "y": 39.29,
+    "title": "External obliques",
+    "text": "Rib flare and side-bending restriction."
+   },
+   {
+    "n": 4,
+    "x": 17.5,
+    "y": 49.12,
+    "title": "TFL / gluteus medius",
+    "text": "Hip-abductor imbalance."
+   },
+   {
+    "n": 5,
+    "x": 17.5,
+    "y": 58.94,
+    "title": "IT band",
+    "text": "Lateral knee pain and lateral hip tension."
+   },
+   {
+    "n": 6,
+    "x": 18.5,
+    "y": 80.23,
+    "title": "Peroneals / lateral foot",
+    "text": "Foundation for lateral-chain stability."
+   }
+  ],
+  "notes": "<p><strong>Established anatomy:</strong> Lateral foot and leg structures connect through the IT band and trunk side to the scalenes and skull.</p><table><thead><tr><th>Location</th><th>Symptom connection</th></tr></thead><tbody><tr><td>IT band / TFL</td><td>Lateral knee pain; hip-abductor imbalance</td></tr><tr><td>External obliques / intercostals</td><td>Rib flare; side-bending restriction</td></tr><tr><td>Scalenes</td><td>Thoracic-outlet compression; arm tingling or numbness</td></tr><tr><td>Lateral neck fascia</td><td>Side-bending limitation; asymmetrical head carriage</td></tr></tbody></table>"
+ },
+ {
+  "id": "spiral-line",
+  "part": "Part 2 · Primary Meridians",
+  "kicker": "Primary meridian 04",
+  "title": "Spiral Line",
+  "accent": "#c99a37",
+  "image": "spiral.webp",
+  "orientation": "landscape",
+  "alt": "Anterior and posterior views of the Spiral Line crossing the torso and legs",
+  "summary": "A criss-crossing myofascial train that wraps the torso, linking skull, opposite shoulder, obliques, opposite hip, lateral leg, and medial arch.",
+  "pathway": "Skull → opposite shoulder → obliques → opposite hip → lateral leg → medial arch",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 62.5,
+    "y": 13.5,
+    "title": "Splenius capitis / cervicis",
+    "text": "Top-of-head and behind-eye pain patterns."
+   },
+   {
+    "n": 2,
+    "x": 59.5,
+    "y": 22.1,
+    "title": "Rhomboid–serratus interface",
+    "text": "Scapular control and rotational dysfunction."
+   },
+   {
+    "n": 3,
+    "x": 19.0,
+    "y": 33.56,
+    "title": "Oblique crossing",
+    "text": "Torso-rotation limitation and gait asymmetry."
+   },
+   {
+    "n": 4,
+    "x": 26.0,
+    "y": 45.84,
+    "title": "Opposite hip / TFL",
+    "text": "Cross-body force transfer into the leg."
+   },
+   {
+    "n": 5,
+    "x": 24.0,
+    "y": 77.78,
+    "title": "Lateral leg / medial arch",
+    "text": "Foot collapse and knee-rotation compensation."
+   }
+  ],
+  "notes": "<p><strong>Established anatomy:</strong> Includes splenius capitis, rhomboids, serratus anterior, external obliques, tensor fascia lata, and tibialis anterior in a helical pattern.</p><table><thead><tr><th>Location</th><th>Symptom connection</th></tr></thead><tbody><tr><td>Splenius capitis / cervicis</td><td>Top-of-head headache; behind-eye pain</td></tr><tr><td>Rhomboid / serratus interface</td><td>Scapular winging; rotational dysfunction</td></tr><tr><td>Oblique crossing</td><td>Torso-rotation limitation; gait asymmetry</td></tr><tr><td>Lateral leg / medial arch</td><td>Foot collapse; knee-rotation compensation</td></tr></tbody></table>"
+ },
+ {
+  "id": "arm-lines",
+  "part": "Part 2 · Primary Meridians",
+  "kicker": "Primary meridian 05",
+  "title": "Arm Lines",
+  "accent": "#7b67a8",
+  "image": "arms.webp",
+  "orientation": "landscape",
+  "alt": "Four anatomical arm-line pathways shown from anterior and posterior views",
+  "summary": "Four distinct fascial pathways connect the axial skeleton to the fingers, organizing shoulder, arm, wrist, and hand tension patterns.",
+  "pathway": "SFAL: pectoralis major → biceps → palm · DFAL: pectoralis minor/subclavius → brachial plexus fascia → thumb · SBAL: trapezius → deltoid → extensors → back of hand · DBAL: rhomboids/rotator cuff → triceps → ulnar side",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 11.0,
+    "y": 40.11,
+    "title": "Superficial Front Arm Line",
+    "text": "Pectoralis major through biceps into the palm; anterior elbow and palm tension."
+   },
+   {
+    "n": 2,
+    "x": 35.0,
+    "y": 40.11,
+    "title": "Deep Front Arm Line",
+    "text": "Pectoralis minor/subclavius and brachial-plexus fascia; thoracic-outlet-type symptoms."
+   },
+   {
+    "n": 3,
+    "x": 60.0,
+    "y": 40.11,
+    "title": "Deep Back Arm Line",
+    "text": "Rhomboids/rotator cuff through triceps to the ulnar side; deep shoulder ache."
+   },
+   {
+    "n": 4,
+    "x": 85.0,
+    "y": 40.11,
+    "title": "Superficial Back Arm Line",
+    "text": "Trapezius, deltoid, and extensors; stress shoulder and lateral elbow pain."
+   },
+   {
+    "n": 5,
+    "x": 12.0,
+    "y": 17.19,
+    "title": "Pectoralis minor interface",
+    "text": "Forward shoulder, neck compression, and neurovascular narrowing."
+   }
+  ],
+  "notes": "<p><strong>Established anatomy:</strong> Four arm pathways provide a map for shoulder-to-hand continuity.</p><table><thead><tr><th>Line / hotspot</th><th>Symptom connection</th></tr></thead><tbody><tr><td>SBAL · upper trapezius / deltoid</td><td>Stress shoulder; temple headache referral</td></tr><tr><td>SBAL · lateral arm extensors</td><td>Tennis elbow; wrist-extension pain</td></tr><tr><td>DFAL · pectoralis minor / subclavius</td><td>Thoracic-outlet symptoms; forward shoulder</td></tr><tr><td>DFAL · brachial plexus fascia</td><td>Arm tingling, numbness, weakness</td></tr><tr><td>DBAL · rotator cuff / infraspinatus</td><td>Deep shoulder ache; restricted reaching</td></tr><tr><td>SFAL · biceps / palmar fascia</td><td>Anterior elbow pain; palm tension</td></tr></tbody></table>"
+ },
+ {
+  "id": "deep-front-line",
+  "part": "Part 2 · Primary Meridians",
+  "kicker": "Primary meridian 06",
+  "title": "Deep Front Line",
+  "accent": "#68737d",
+  "image": "dfl.webp",
+  "orientation": "landscape",
+  "alt": "Anterior, posterior, and lateral views of the Deep Front Line",
+  "summary": "The deep core line: deep neck flexors, hyoid apparatus, mediastinum, psoas, pelvic floor, adductors, and tibialis posterior.",
+  "pathway": "Deep neck flexors → hyoid/TMJ → mediastinum → psoas → pelvic floor → adductors → tibialis posterior",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 16.0,
+    "y": 20.05,
+    "title": "Longus colli / capitis",
+    "text": "Deep neck-flexor inhibition can drive superficial overwork."
+   },
+   {
+    "n": 2,
+    "x": 16.0,
+    "y": 16.37,
+    "title": "Hyoid / TMJ interface",
+    "text": "Jaw clenching, swallowing dysfunction, and floor-of-mouth tension."
+   },
+   {
+    "n": 3,
+    "x": 16.0,
+    "y": 26.19,
+    "title": "Mediastinum",
+    "text": "Deep thoracic continuity between neck and abdomen."
+   },
+   {
+    "n": 4,
+    "x": 17.0,
+    "y": 47.48,
+    "title": "Psoas / iliacus",
+    "text": "Hip-flexor tone, lumbar lordosis, and anterior pelvic tilt."
+   },
+   {
+    "n": 5,
+    "x": 46.0,
+    "y": 53.21,
+    "title": "Pelvic floor",
+    "text": "Core stability and sacral tension interface."
+   },
+   {
+    "n": 6,
+    "x": 15.0,
+    "y": 58.94,
+    "title": "Adductors",
+    "text": "Medial thigh link between pelvis and leg."
+   },
+   {
+    "n": 7,
+    "x": 15.5,
+    "y": 73.68,
+    "title": "Tibialis posterior",
+    "text": "Medial arch support and plantar-fascia contribution."
+   }
+  ],
+  "notes": "<p><strong>Established anatomy:</strong> A deep, less visible line critically involved in postural stability.</p><p><strong>Proposed model:</strong> When deep neck flexors are inhibited, SCM and upper trapezius compensate—one reason surface-only treatment may not resolve chronic neck tension.</p><table><thead><tr><th>Location</th><th>Symptom connection</th></tr></thead><tbody><tr><td>Longus colli / capitis</td><td>Hidden driver of forward-head posture</td></tr><tr><td>Hyoid / TMJ / floor of mouth</td><td>Jaw clenching; TMJ pain; swallowing dysfunction</td></tr><tr><td>Psoas / iliacus</td><td>Hip-flexor tightness; lumbar lordosis; anterior pelvic tilt</td></tr><tr><td>Pelvic floor</td><td>Core instability; sacral tension</td></tr><tr><td>Tibialis posterior</td><td>Medial arch collapse; plantar-fasciitis contribution</td></tr></tbody></table>"
+ },
+ {
+  "id": "functional-lines",
+  "part": "Part 2 · Primary Meridians",
+  "kicker": "Primary meridian 07",
+  "title": "Functional Lines",
+  "accent": "#cf7a3f",
+  "image": "functional.webp",
+  "orientation": "landscape",
+  "alt": "Front, back, and ipsilateral Functional Lines crossing the torso",
+  "summary": "Diagonal force-transfer pathways crossing the torso, especially the latissimus-dorsi-to-contralateral-gluteus connection through the thoracolumbar fascia.",
+  "pathway": "Shoulder → opposite obliques → opposite hip",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 58.0,
+    "y": 28.65,
+    "title": "Latissimus dorsi",
+    "text": "Upper-body anchor for the Back Functional Line."
+   },
+   {
+    "n": 2,
+    "x": 59.0,
+    "y": 40.93,
+    "title": "Thoracolumbar crossing",
+    "text": "Fascial force-transfer hub across the low back."
+   },
+   {
+    "n": 3,
+    "x": 61.0,
+    "y": 50.76,
+    "title": "Contralateral gluteus maximus",
+    "text": "Lower-body anchor for posterior diagonal force."
+   },
+   {
+    "n": 4,
+    "x": 18.0,
+    "y": 20.46,
+    "title": "Pectoralis major",
+    "text": "Front Functional Line shoulder anchor."
+   },
+   {
+    "n": 5,
+    "x": 20.0,
+    "y": 53.21,
+    "title": "Rectus / adductor pathway",
+    "text": "Anterior diagonal connection toward the opposite thigh."
+   },
+   {
+    "n": 6,
+    "x": 85.0,
+    "y": 40.11,
+    "title": "Ipsilateral pathway",
+    "text": "Side-body variation linking shoulder and same-side hip."
+   }
+  ],
+  "notes": "<p><strong>Established anatomy:</strong> The Back Functional Line—latissimus dorsi through thoracolumbar fascia to the contralateral gluteus maximus—has particularly strong anatomical support.</p><ul><li><strong>Back Functional Line:</strong> latissimus dorsi → thoracolumbar fascia → contralateral gluteus maximus.</li><li><strong>Front Functional Line:</strong> pectoralis major → rectus abdominis sheath → contralateral adductors.</li><li><strong>Clinical relevance:</strong> rotational gait, throwing, reaching, and cross-body stabilization.</li></ul>"
+ },
+ {
+  "id": "plantar-fasciitis",
+  "part": "Part 3 · Symptom Cross-Reference",
+  "kicker": "Symptom guide",
+  "title": "Plantar Fasciitis",
+  "accent": "#3f76b5",
+  "image": "plantar-stations.webp",
+  "orientation": "landscape",
+  "alt": "Posterior view of the superficial back line with a detailed plantar fascia and heel study",
+  "summary": "The foot is the symptom site, but the guide maps contributing tension through the entire posterior chain and medial-arch support system.",
+  "pathway": "Plantar fascia → Achilles / calf → hamstrings → sacrotuberous ligament → thoracolumbar fascia · plus tibialis posterior support",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 66.0,
+    "y": 58.13,
+    "title": "Plantar fascia",
+    "text": "Endpoint and symptom site: heel pain and first-step pain."
+   },
+   {
+    "n": 2,
+    "x": 54.0,
+    "y": 40.11,
+    "title": "Achilles / gastrocnemius",
+    "text": "Tension transmitter influencing dorsiflexion and plantar load."
+   },
+   {
+    "n": 3,
+    "x": 20.0,
+    "y": 64.68,
+    "title": "Hamstrings",
+    "text": "Proximal posterior-chain tension."
+   },
+   {
+    "n": 4,
+    "x": 21.0,
+    "y": 52.39,
+    "title": "Sacrotuberous ligament",
+    "text": "Pelvic anchor linking sacrum to hamstrings."
+   },
+   {
+    "n": 5,
+    "x": 21.0,
+    "y": 41.75,
+    "title": "Thoracolumbar fascia",
+    "text": "Major convergence zone that can transmit tension downward."
+   },
+   {
+    "n": 6,
+    "x": 21.0,
+    "y": 31.11,
+    "title": "Erector spinae",
+    "text": "Posterior trunk contribution to chain tension."
+   },
+   {
+    "n": 7,
+    "x": 21.0,
+    "y": 16.37,
+    "title": "Suboccipitals",
+    "text": "Far-end station showing the full-line concept."
+   }
+  ],
+  "notes": "<p><strong>Primary lines:</strong> SBL, Deep Front Line, and Lateral Line.</p><p><strong>Why local treatment can fail:</strong> treating only the foot ignores proximally generated tension transmitted through the continuous fascial sheet.</p><ul><li>Address plantar fascia as the endpoint, not the whole problem.</li><li>Assess gastrocnemius/Achilles, hamstrings, sacrotuberous ligament, and thoracolumbar fascia.</li><li>Include tibialis posterior for medial-arch support.</li></ul>"
+ },
+ {
+  "id": "low-back-pain",
+  "part": "Part 3 · Symptom Cross-Reference",
+  "kicker": "Symptom guide",
+  "title": "Low Back Pain",
+  "accent": "#4f9273",
+  "image": "low-back.webp",
+  "orientation": "landscape",
+  "alt": "Posterior anatomy of the back with the thoracolumbar fascia highlighted",
+  "summary": "A convergence-centered view of non-specific low-back pain: thoracolumbar fascia, deep stabilizers, pelvic anchors, and diagonal force transfer.",
+  "pathway": "Thoracolumbar fascia ⇄ erector spinae / multifidus ⇄ psoas / QL ⇄ sacrotuberous ligament ⇄ latissimus-to-glute line",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 30.0,
+    "y": 54.03,
+    "title": "Thoracolumbar fascia",
+    "text": "Dense fascial hub linking trunk, pelvis, and limbs."
+   },
+   {
+    "n": 2,
+    "x": 14.0,
+    "y": 29.47,
+    "title": "Latissimus dorsi",
+    "text": "Upper-body contributor to posterior diagonal force."
+   },
+   {
+    "n": 3,
+    "x": 44.0,
+    "y": 33.56,
+    "title": "Contralateral latissimus",
+    "text": "Shows the broad bilateral fascial field."
+   },
+   {
+    "n": 4,
+    "x": 33.0,
+    "y": 35.2,
+    "title": "Erector spinae / multifidus",
+    "text": "Paraspinal guarding and deep-stabilizer interface."
+   },
+   {
+    "n": 5,
+    "x": 34.0,
+    "y": 76.14,
+    "title": "Sacrum / pelvic anchor",
+    "text": "Force-closure region connecting spine and lower limbs."
+   }
+  ],
+  "notes": "<p><strong>Primary lines:</strong> SBL, Deep Front Line, Spiral Line, and Back Functional Line.</p><p>The guide summarizes findings of altered fascial stiffness, reduced layer sliding, inflammatory signaling, and extracellular-matrix remodeling in chronic low-back pain.</p><ul><li>Thoracolumbar fascia is the major convergence zone.</li><li>Assess erector spinae and multifidus guarding.</li><li>Include psoas and quadratus lumborum as deep stabilizers.</li><li>Check sacrotuberous ligament and latissimus-to-glute force transfer.</li></ul>"
+ },
+ {
+  "id": "forward-head-posture",
+  "part": "Part 3 · Symptom Cross-Reference",
+  "kicker": "Symptom guide",
+  "title": "Forward Head Posture",
+  "accent": "#c9564c",
+  "image": "forward-head.webp",
+  "orientation": "landscape",
+  "alt": "Profile comparison of neutral and forward head posture with neck musculature",
+  "summary": "A tug-of-war among posterior shortening, anterior collapse, deep-neck-flexor weakness, and forward-dragging shoulders.",
+  "pathway": "Suboccipitals + SCM + deep neck flexors + pectoralis minor + upper trapezius",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 58.0,
+    "y": 51.58,
+    "title": "SCM sternal division",
+    "text": "Overworks when deep neck flexors fail; temporal and cheek referral."
+   },
+   {
+    "n": 2,
+    "x": 66.0,
+    "y": 25.38,
+    "title": "Temporal / behind-eye referral",
+    "text": "Common SCM-related head-pain pattern."
+   },
+   {
+    "n": 3,
+    "x": 70.0,
+    "y": 38.48,
+    "title": "Cheek / TMJ referral",
+    "text": "Anterior neck tension can echo into jaw and face."
+   },
+   {
+    "n": 4,
+    "x": 55.0,
+    "y": 64.68,
+    "title": "SCM clavicular division",
+    "text": "Ear pain, top-of-head referral, and autonomic-type symptoms."
+   },
+   {
+    "n": 5,
+    "x": 79.0,
+    "y": 19.64,
+    "title": "Forehead referral",
+    "text": "Clavicular division pattern across the upper head."
+   }
+  ],
+  "notes": "<p><strong>Primary lines:</strong> SBL, SFL, Deep Front Line, and Arm Lines.</p><ul><li><strong>SBL:</strong> suboccipitals shorten while the posterior chain attempts to hold the head back.</li><li><strong>SFL:</strong> SCM and abdominal collapse pull the head and rib cage downward.</li><li><strong>DFL:</strong> longus colli/capitis weakness removes deep stabilization.</li><li><strong>Arm Lines:</strong> pectoralis minor and upper trapezius drag or guard the shoulder-neck complex.</li></ul>"
+ },
+ {
+  "id": "tension-headaches",
+  "part": "Part 3 · Symptom Cross-Reference",
+  "kicker": "Symptom guide",
+  "title": "Tension Headaches",
+  "accent": "#b65060",
+  "image": "tension-headaches.webp",
+  "orientation": "landscape",
+  "alt": "Grid of head and neck trigger-point referral patterns",
+  "summary": "Head pain can be referred from several neck, jaw, and shoulder muscles rather than originating at the painful area itself.",
+  "pathway": "Suboccipitals → occipital head · upper trapezius → temple · SCM → temporal / behind eye / frontal · TMJ-hyoid → diffuse pressure",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 87.0,
+    "y": 66.31,
+    "title": "Masseter",
+    "text": "Jaw-clenching referral into face, teeth, and head."
+   },
+   {
+    "n": 2,
+    "x": 36.0,
+    "y": 48.3,
+    "title": "Semispinalis capitis",
+    "text": "Occipital and head referral pattern."
+   },
+   {
+    "n": 3,
+    "x": 36.0,
+    "y": 35.2,
+    "title": "Suboccipital muscles",
+    "text": "Base-of-skull and occipital headache source."
+   },
+   {
+    "n": 4,
+    "x": 11.0,
+    "y": 30.29,
+    "title": "Temporalis",
+    "text": "Temple and jaw-associated headache pattern."
+   },
+   {
+    "n": 5,
+    "x": 13.0,
+    "y": 79.41,
+    "title": "Upper trapezius",
+    "text": "Classic neck-to-temple referral."
+   }
+  ],
+  "notes": "<p><strong>Primary lines:</strong> SBL, SFL, and Deep Front Line.</p><table><thead><tr><th>Line</th><th>Common headache source</th></tr></thead><tbody><tr><td>SBL</td><td>Suboccipitals → occipital headache; upper traps → temple referral</td></tr><tr><td>SFL</td><td>SCM → temporal, behind-eye, or frontal headache</td></tr><tr><td>DFL</td><td>TMJ / hyoid → diffuse head pressure; deep-neck-flexor trigger points</td></tr></tbody></table>"
+ },
+ {
+  "id": "thoracic-outlet",
+  "part": "Part 3 · Symptom Cross-Reference",
+  "kicker": "Symptom guide",
+  "title": "Thoracic Outlet–Type Symptoms",
+  "accent": "#7b67a8",
+  "image": "tos.webp",
+  "orientation": "landscape",
+  "alt": "Lateral neck and shoulder anatomy with the neurovascular bundle passing toward the arm",
+  "summary": "A map for arm tingling, numbness, or weakness when the brachial plexus and subclavian vessels are compressed around the scalene–first-rib–pectoralis-minor region.",
+  "pathway": "Scalenes + pectoralis minor + subclavius + first rib → neurovascular space → arm and hand symptoms",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 30.0,
+    "y": 23.74,
+    "title": "Scalenes",
+    "text": "Anterior/middle scalene tension can narrow the outlet."
+   },
+   {
+    "n": 2,
+    "x": 15.0,
+    "y": 56.49,
+    "title": "Infraspinatus referral",
+    "text": "Deep shoulder and arm referral can mimic neurogenic pain."
+   },
+   {
+    "n": 3,
+    "x": 15.0,
+    "y": 45.02,
+    "title": "Supraspinatus referral",
+    "text": "Shoulder-to-arm referral pattern."
+   },
+   {
+    "n": 4,
+    "x": 22.0,
+    "y": 43.39,
+    "title": "Subscapularis / axillary region",
+    "text": "Shoulder restriction and posterior axillary pain."
+   },
+   {
+    "n": 5,
+    "x": 75.0,
+    "y": 36.02,
+    "title": "Hand / finger referral",
+    "text": "Symptoms may appear far from the compression site."
+   }
+  ],
+  "notes": "<p><strong>Primary lines:</strong> Deep Front Line, Lateral Line, and Deep Front Arm Line.</p><ul><li>Scalenes: anterior and middle scalene tension.</li><li>Pectoralis minor: pulls the coracoid forward and narrows space.</li><li>Subclavius: inferior clavicle pull.</li><li>First-rib elevation: often tied to accessory breathing patterns.</li><li>This guide is not a diagnostic tool; neurovascular symptoms require appropriate clinical assessment.</li></ul>"
+ },
+ {
+  "id": "tmj-jaw",
+  "part": "Part 3 · Symptom Cross-Reference",
+  "kicker": "Symptom guide",
+  "title": "TMJ / Jaw Clenching",
+  "accent": "#68737d",
+  "image": "tmj.webp",
+  "orientation": "landscape",
+  "alt": "Skull and deep neck views emphasizing the jaw, hyoid, and anterior neck connections",
+  "summary": "Jaw tension is mapped through the hyoid apparatus and floor of mouth into the sternum, scapula, cranial base, and deep anterior body.",
+  "pathway": "Pterygoids + masseter / temporalis + SCM + hyoid + suboccipitals",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 33.0,
+    "y": 22.92,
+    "title": "Jaw / TMJ",
+    "text": "Local clenching and joint-load center."
+   },
+   {
+    "n": 2,
+    "x": 50.0,
+    "y": 67.95,
+    "title": "Hyoid / floor of mouth",
+    "text": "Deep Front Line connection between jaw, tongue, and anterior neck."
+   },
+   {
+    "n": 3,
+    "x": 30.0,
+    "y": 45.02,
+    "title": "SCM / anterior neck",
+    "text": "Mastoid pull can influence jaw position."
+   },
+   {
+    "n": 4,
+    "x": 50.0,
+    "y": 79.41,
+    "title": "Sternal / mediastinal connection",
+    "text": "Jaw tension can transmit downward through anterior fascia."
+   },
+   {
+    "n": 5,
+    "x": 14.0,
+    "y": 33.56,
+    "title": "Suboccipital region",
+    "text": "Cranial-base tension interacts with jaw and head position."
+   }
+  ],
+  "notes": "<p><strong>Primary lines:</strong> Deep Front Line, SFL, and Spiral Line.</p><ul><li>Medial and lateral pterygoids: direct jaw muscles.</li><li>Masseter and temporalis: jaw closers and headache contributors.</li><li>SCM: pulls on the mastoid and can alter jaw-head positioning.</li><li>Suboccipitals: cranial-base tension linked to jaw clenching.</li></ul>"
+ },
+ {
+  "id": "hip-flexor-apt",
+  "part": "Part 3 · Symptom Cross-Reference",
+  "kicker": "Symptom guide",
+  "title": "Hip Flexor Tightness & Anterior Pelvic Tilt",
+  "accent": "#cf7a3f",
+  "image": "hip-flexor.webp",
+  "orientation": "landscape",
+  "alt": "Anatomical illustration of psoas major, psoas minor, and iliacus",
+  "summary": "The psoas bridges lumbar spine and femur; when shortened, it can increase lumbar extension, tip the pelvis forward, and contribute to a whole-chain postural cascade.",
+  "pathway": "Lumbar vertebrae → psoas major / iliacus → lesser trochanter → pelvic position → rib cage and neck compensation",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 28.0,
+    "y": 27.01,
+    "title": "Lumbar vertebrae",
+    "text": "Psoas origin along the lumbar spine."
+   },
+   {
+    "n": 2,
+    "x": 23.0,
+    "y": 41.75,
+    "title": "Psoas major",
+    "text": "Primary bridge between spine, pelvis, and femur."
+   },
+   {
+    "n": 3,
+    "x": 16.0,
+    "y": 59.76,
+    "title": "Iliacus",
+    "text": "Joins psoas as the iliopsoas complex."
+   },
+   {
+    "n": 4,
+    "x": 30.0,
+    "y": 36.02,
+    "title": "Psoas minor",
+    "text": "Variable muscle lying along the anterior psoas pathway."
+   },
+   {
+    "n": 5,
+    "x": 14.0,
+    "y": 81.05,
+    "title": "Lesser trochanter",
+    "text": "Femoral attachment where hip-flexion force is expressed."
+   }
+  ],
+  "notes": "<p><strong>Primary lines:</strong> Deep Front Line, SFL, and Spiral Line.</p><ul><li>Tight psoas can increase lumbar lordosis and compress posterior spinal elements.</li><li>Anterior pelvic tilt changes hamstring and abdominal length-tension relationships.</li><li>Rib-cage depression and neck extension can follow as whole-chain compensation.</li><li>Assessment should distinguish true shortness from guarding, weakness, or positional strategy.</li></ul>"
+ },
+ {
+  "id": "thoracolumbar-fascia",
+  "part": "Part 4 · Convergence Points",
+  "kicker": "Convergence zone",
+  "title": "Thoracolumbar Fascia",
+  "accent": "#4f9273",
+  "image": "tlf.webp",
+  "orientation": "landscape",
+  "alt": "Thoracolumbar fascia cross-section and posterior fascial-line connection",
+  "summary": "A dense, multi-layered fascial sheet connecting trunk, lower limbs, and upper extremities—and the guide’s most important posterior fascial hub.",
+  "pathway": "Latissimus dorsi ⇄ thoracolumbar fascia ⇄ gluteus maximus · with psoas, QL, multifidus, and abdominal interfaces",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 27.0,
+    "y": 31.93,
+    "title": "Thoracodorsal fascia",
+    "text": "Posterior fascial envelope around the spinal extensors."
+   },
+   {
+    "n": 2,
+    "x": 74.0,
+    "y": 61.4,
+    "title": "Multifidus compartment",
+    "text": "Deep stabilizer enclosed by fascial layers."
+   },
+   {
+    "n": 3,
+    "x": 14.0,
+    "y": 36.02,
+    "title": "Latissimus connection",
+    "text": "Upper-limb force enters the low-back fascia."
+   },
+   {
+    "n": 4,
+    "x": 27.0,
+    "y": 67.95,
+    "title": "Gluteal / sacral interface",
+    "text": "Force continues toward pelvis and lower limb."
+   }
+  ],
+  "notes": "<p><strong>Lines converging:</strong> SBL, Spiral Line, Back Functional Line, and Deep Front Line via the psoas/QL interface.</p><p><strong>Why it matters:</strong> dysfunction here can ripple upward to the neck and downward toward the feet.</p>"
+ },
+ {
+  "id": "sacrum-sacrotuberous",
+  "part": "Part 4 · Convergence Points",
+  "kicker": "Convergence zone",
+  "title": "Sacrum / Sacrotuberous Ligament",
+  "accent": "#8b6f47",
+  "image": "sacrum.webp",
+  "orientation": "landscape",
+  "alt": "Axial pelvis diagram showing sacrum, pelvic muscles, and force-closure interfaces",
+  "summary": "The sacrum acts as the pelvic keystone; sacrotuberous tension links directly to hamstring length and pelvic positioning.",
+  "pathway": "Sacrum ⇄ SI joints ⇄ sacrotuberous ligament ⇄ hamstrings / posterior chain",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 25.0,
+    "y": 31.93,
+    "title": "Sacrum",
+    "text": "Central pelvic keystone."
+   },
+   {
+    "n": 2,
+    "x": 20.0,
+    "y": 33.56,
+    "title": "SI joint interface",
+    "text": "Load-transfer region between spine and pelvis."
+   },
+   {
+    "n": 3,
+    "x": 30.0,
+    "y": 33.56,
+    "title": "Contralateral SI interface",
+    "text": "Bilateral force closure and pelvic stability."
+   },
+   {
+    "n": 4,
+    "x": 60.0,
+    "y": 25.38,
+    "title": "Psoas / iliacus interface",
+    "text": "Deep Front Line contribution to pelvic position."
+   },
+   {
+    "n": 5,
+    "x": 24.0,
+    "y": 13.91,
+    "title": "Multifidus / posterior anchor",
+    "text": "Posterior stabilization around the sacrum."
+   }
+  ],
+  "notes": "<p><strong>Lines converging:</strong> SBL, Spiral Line, and Deep Front Line.</p><p>Tension here can influence hamstring length, sacral comfort, and pelvic orientation.</p>"
+ },
+ {
+  "id": "suboccipital-region",
+  "part": "Part 4 · Convergence Points",
+  "kicker": "Convergence zone",
+  "title": "Suboccipital Region",
+  "accent": "#b65060",
+  "image": "suboccipital.webp",
+  "orientation": "landscape",
+  "alt": "Posterior and lateral upper-neck anatomy with a detailed suboccipital muscle study",
+  "summary": "A highly sensitive head-positioning region where posterior, deep, and spiral pathways meet.",
+  "pathway": "Suboccipitals ⇄ upper trapezius ⇄ scalp / occiput ⇄ cervical deep flexors",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 18.5,
+    "y": 18.82,
+    "title": "Suboccipital referral",
+    "text": "Base-of-skull and occipital headache pattern."
+   },
+   {
+    "n": 2,
+    "x": 15.0,
+    "y": 66.31,
+    "title": "Upper trapezius",
+    "text": "Stress-shoulder guarding and temple referral."
+   },
+   {
+    "n": 3,
+    "x": 26.0,
+    "y": 67.95,
+    "title": "Upper trapezius trigger zone",
+    "text": "Common posterior neck/shoulder hotspot."
+   },
+   {
+    "n": 4,
+    "x": 19.0,
+    "y": 82.69,
+    "title": "Lower trapezius region",
+    "text": "Postural endurance and scapular support."
+   },
+   {
+    "n": 5,
+    "x": 19.0,
+    "y": 88.42,
+    "title": "T12 landmark",
+    "text": "Shows the full trapezius field extending down the back."
+   }
+  ],
+  "notes": "<p><strong>Lines converging:</strong> SBL, Deep Front Line, and Spiral Line.</p><p>The guide notes that rectus capitis posterior muscles have a very high density of muscle spindles, making the region highly sensitive to positional change.</p>"
+ },
+ {
+  "id": "scalene-scm-first-rib",
+  "part": "Part 4 · Convergence Points",
+  "kicker": "Convergence zone",
+  "title": "Scalene / SCM / First-Rib Triangle",
+  "accent": "#7b67a8",
+  "image": "scalene.webp",
+  "orientation": "landscape",
+  "alt": "Detailed anatomical illustration of sternocleidomastoid, scalenes, hyoid, and clavicle",
+  "summary": "A compact neurovascular crossroads where the brachial plexus and subclavian vessels pass among scalenes, clavicle, first rib, and pectoralis-minor influence.",
+  "pathway": "Mastoid → SCM → scalenes → subclavius / clavicle → first rib → arm",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 23.0,
+    "y": 22.1,
+    "title": "Mastoid process",
+    "text": "SCM attachment and head-position reference."
+   },
+   {
+    "n": 2,
+    "x": 48.0,
+    "y": 36.84,
+    "title": "Sternocleidomastoid",
+    "text": "Superficial front-line endpoint; can dominate when deep flexors underperform."
+   },
+   {
+    "n": 3,
+    "x": 14.0,
+    "y": 33.56,
+    "title": "Scalenes",
+    "text": "Lateral-line endpoint and thoracic-outlet contributor."
+   },
+   {
+    "n": 4,
+    "x": 78.0,
+    "y": 43.39,
+    "title": "Clavicle / first-rib region",
+    "text": "Neurovascular passage toward the arm."
+   },
+   {
+    "n": 5,
+    "x": 44.0,
+    "y": 33.56,
+    "title": "Hyoid / anterior neck",
+    "text": "Deep-front-line interface with jaw and swallowing."
+   }
+  ],
+  "notes": "<p><strong>Lines converging:</strong> SFL, Lateral Line, Deep Front Line, and Arm Lines.</p><p>Fascial restriction here can contribute to compression-type symptoms, but persistent numbness, weakness, swelling, or vascular changes require medical assessment.</p>"
+ },
+ {
+  "id": "plantar-calcaneus",
+  "part": "Part 4 · Convergence Points",
+  "kicker": "Convergence zone",
+  "title": "Plantar Fascia / Calcaneus",
+  "accent": "#3f76b5",
+  "image": "foot.webp",
+  "orientation": "landscape",
+  "alt": "Detailed view of the plantar fascia, heel, and arch-support structures",
+  "summary": "The foot is the foundation of the posterior and deep chains; restriction or poor arch control can transmit upward through the whole body.",
+  "pathway": "Plantar fascia / calcaneus ⇄ Achilles-calf ⇄ tibialis posterior ⇄ posterior chain",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 53.65,
+    "y": 82.0,
+    "title": "Short-foot control",
+    "text": "Builds intrinsic foot support without gripping."
+   },
+   {
+    "n": 2,
+    "x": 71.47,
+    "y": 90.0,
+    "title": "Toe control",
+    "text": "Toe-spreading and independent toe movement."
+   },
+   {
+    "n": 3,
+    "x": 62.26,
+    "y": 90.0,
+    "title": "Towel curl",
+    "text": "Flexor control and plantar-foot engagement."
+   },
+   {
+    "n": 4,
+    "x": 51.2,
+    "y": 68.0,
+    "title": "Arch doming",
+    "text": "Medial-arch lift and tibialis-posterior support."
+   }
+  ],
+  "notes": "<p><strong>Lines converging:</strong> SBL, Deep Front Line, and Lateral Line.</p><p>The foot is both an endpoint and a foundation: local symptoms can reflect load transferred from above, while local restriction can alter the entire chain.</p>"
+ },
+ {
+  "id": "fascial-sliding",
+  "part": "Part 5 · Glide, Hydration & Restoration",
+  "kicker": "Fascial science",
+  "title": "The Science of Fascial Sliding",
+  "accent": "#3b8b8f",
+  "image": "fascial-sliding.webp",
+  "orientation": "landscape",
+  "alt": "Cross-sections of skin, adipose tissue, superficial fascia, deep fascia, muscle, and bone",
+  "summary": "Healthy fascia depends on glide between layers, supported by hyaluronan in loose connective tissue. Densification can reduce mobility and increase nociceptive signaling.",
+  "pathway": "Skin → adipose → superficial fascia → hyaluronan-rich loose tissue → deep fascia → muscle / bone interfaces",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 35.0,
+    "y": 17.19,
+    "title": "Skin",
+    "text": "Outermost protective layer."
+   },
+   {
+    "n": 2,
+    "x": 36.0,
+    "y": 25.38,
+    "title": "Adipose layers",
+    "text": "Sliding and cushioning compartments."
+   },
+   {
+    "n": 3,
+    "x": 38.0,
+    "y": 43.39,
+    "title": "Hyaluronan-rich layers",
+    "text": "Lubricating interface between fascial sheets."
+   },
+   {
+    "n": 4,
+    "x": 36.0,
+    "y": 58.13,
+    "title": "Deep fascia",
+    "text": "Dense connective tissue surrounding muscle."
+   },
+   {
+    "n": 5,
+    "x": 36.0,
+    "y": 67.95,
+    "title": "Loose connective tissue",
+    "text": "Key glide zone around muscle and bone."
+   },
+   {
+    "n": 6,
+    "x": 36.0,
+    "y": 79.41,
+    "title": "Periosteum / bone",
+    "text": "Deep structural endpoint in the tissue stack."
+   }
+  ],
+  "notes": "<p>When hyaluronan becomes depleted or more viscous, fascial layers can stick together, reducing mobility and potentially activating nociceptors.</p>"
+ },
+ {
+  "id": "mfr-evidence",
+  "part": "Part 5 · Glide, Hydration & Restoration",
+  "kicker": "Fascial science",
+  "title": "Evidence for Myofascial Release",
+  "accent": "#c96b5f",
+  "image": "mfr-evidence.webp",
+  "orientation": "landscape",
+  "alt": "Anatomical cross-section showing fascial layers addressed by myofascial release",
+  "summary": "The guide summarizes moderate but variable evidence: myofascial release appears most useful when paired with movement and exercise rather than used alone.",
+  "pathway": "Sustained pressure → tissue temperature / viscoelastic change → improved layer glide → movement retraining",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 38.0,
+    "y": 25.38,
+    "title": "Superficial fascia",
+    "text": "Target of lighter, surface-oriented techniques."
+   },
+   {
+    "n": 2,
+    "x": 30.0,
+    "y": 30.29,
+    "title": "Fatty layers",
+    "text": "Sliding and cushioning compartments."
+   },
+   {
+    "n": 3,
+    "x": 36.0,
+    "y": 43.39,
+    "title": "Deep fascia",
+    "text": "Denser layer addressed with slower, sustained load."
+   },
+   {
+    "n": 4,
+    "x": 48.0,
+    "y": 54.03,
+    "title": "Loose connective tissue",
+    "text": "Glide interface where hydration and mobility matter."
+   },
+   {
+    "n": 5,
+    "x": 78.0,
+    "y": 29.47,
+    "title": "Periosteal / deep interface",
+    "text": "Deeper structural boundary, not the sole target of treatment."
+   }
+  ],
+  "notes": "<p>Systematic reviews summarized in the guide report improvements in pain and physical function for chronic low-back pain, with moderate evidence for fibromyalgia. Evidence quality varies, and combined movement-based care appears more effective than passive treatment alone.</p>"
+ },
+ {
+  "id": "fascia-goals",
+  "part": "Part 5 · Glide, Hydration & Restoration",
+  "kicker": "Fascial science",
+  "title": "Goals of Fascia-Focused Work",
+  "accent": "#3b8b8f",
+  "image": "goals.webp",
+  "orientation": "landscape",
+  "alt": "Postural figures paired with fascial-layer and matrix microstructure panels",
+  "summary": "The treatment goals are functional: restore glide, reduce segmentation, improve hydration, rebalance posture, and retrain movement.",
+  "pathway": "Restore glide → reduce segmentation → improve hydration → rebalance posture → retrain neuromotor control",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 10.0,
+    "y": 43.39,
+    "title": "Skin / superficial boundary",
+    "text": "Orientation point for the tissue stack."
+   },
+   {
+    "n": 2,
+    "x": 30.0,
+    "y": 48.3,
+    "title": "Adipose tissue",
+    "text": "Sliding and cushioning layer."
+   },
+   {
+    "n": 3,
+    "x": 50.0,
+    "y": 45.84,
+    "title": "Superficial fascia",
+    "text": "Important interface for glide."
+   },
+   {
+    "n": 4,
+    "x": 70.0,
+    "y": 72.86,
+    "title": "Deep fascia",
+    "text": "Dense layer surrounding muscle."
+   },
+   {
+    "n": 5,
+    "x": 50.0,
+    "y": 74.5,
+    "title": "Hyaluronic acid",
+    "text": "Hydration and lubrication within the matrix."
+   },
+   {
+    "n": 6,
+    "x": 90.0,
+    "y": 74.5,
+    "title": "Collagen / fibroblast / fasciacyte",
+    "text": "Structural and cellular components of fascia."
+   }
+  ],
+  "notes": "<table><thead><tr><th>Goal</th><th>What it means</th><th>Approach</th></tr></thead><tbody><tr><td>Restore glide</td><td>Rehydrate layers and reduce densification</td><td>Slow sustained pressure; movement under load</td></tr><tr><td>Reduce segmentation</td><td>Address adhesions between compartments</td><td>Cross-fiber techniques; multi-planar movement</td></tr><tr><td>Improve hydration</td><td>Enhance hyaluronan distribution</td><td>Movement variety; loading; adequate hydration</td></tr><tr><td>Postural rebalance</td><td>Address line-length imbalances</td><td>Targeted strengthening plus release</td></tr><tr><td>Neuromotor re-education</td><td>Retrain movement patterns</td><td>Functional movement and proprioceptive challenge</td></tr></tbody></table>"
+ },
+ {
+  "id": "release-techniques",
+  "part": "Part 6 · Practical Application",
+  "kicker": "Practical application",
+  "title": "Release Techniques",
+  "accent": "#c96b5f",
+  "image": "release-techniques.webp",
+  "orientation": "landscape",
+  "alt": "Manual myofascial release, sustained contact, and instrument-assisted techniques",
+  "summary": "Techniques are organized by intent: direct pressure into restriction, indirect following into ease, or instrument-assisted work at superficial layers.",
+  "pathway": "Direct release · indirect / unwinding · instrument-assisted work",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 16.0,
+    "y": 45.84,
+    "title": "Direct myofascial release",
+    "text": "Sustained pressure into restriction for approximately 90–120 seconds to allow viscoelastic change."
+   },
+   {
+    "n": 2,
+    "x": 50.0,
+    "y": 43.39,
+    "title": "Sustained contact",
+    "text": "Slow, specific pressure favors tissue adaptation over aggressive force."
+   },
+   {
+    "n": 3,
+    "x": 83.0,
+    "y": 43.39,
+    "title": "Instrument-assisted work",
+    "text": "Tools can address superficial fascial layers and provide different sensory input."
+   }
+  ],
+  "notes": "<ul><li><strong>Direct myofascial release:</strong> sustained pressure into restriction for 90–120 seconds.</li><li><strong>Indirect / unwinding:</strong> follow tissue toward ease and allow spontaneous release.</li><li><strong>Instrument-assisted:</strong> use tools to address superficial fascial layers without replacing movement retraining.</li></ul>"
+ },
+ {
+  "id": "movement-approaches",
+  "part": "Part 6 · Practical Application",
+  "kicker": "Practical application",
+  "title": "Movement Approaches",
+  "accent": "#4f9273",
+  "image": "movement.webp",
+  "orientation": "landscape",
+  "alt": "Loaded whole-body positions showing fascial lines under movement",
+  "summary": "Movement turns passive tissue change into usable capacity by loading entire chains across multiple planes.",
+  "pathway": "Yoga / Pilates → functional whole-chain training → eccentric loading → tendon-fascia adaptation",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 24.0,
+    "y": 59.76,
+    "title": "Upper-body support",
+    "text": "Load enters through arms and shoulder girdle."
+   },
+   {
+    "n": 2,
+    "x": 13.0,
+    "y": 51.58,
+    "title": "Rib cage / spine",
+    "text": "Multi-planar trunk organization."
+   },
+   {
+    "n": 3,
+    "x": 6.5,
+    "y": 59.76,
+    "title": "Hamstrings",
+    "text": "Posterior-chain lengthening under load."
+   },
+   {
+    "n": 4,
+    "x": 5.0,
+    "y": 72.86,
+    "title": "Calves / Achilles",
+    "text": "Eccentric and elastic loading through the lower chain."
+   },
+   {
+    "n": 5,
+    "x": 4.5,
+    "y": 82.69,
+    "title": "Feet",
+    "text": "Foot control completes the chain from the ground up."
+   }
+  ],
+  "notes": "<ul><li><strong>Yoga / Pilates:</strong> multi-planar loading of fascial lines.</li><li><strong>Functional training:</strong> whole-chain movements rather than isolated muscle exercises.</li><li><strong>Eccentric loading:</strong> particularly useful for tendon-fascia interfaces.</li></ul>"
+ },
+ {
+  "id": "treat-the-line",
+  "part": "Part 6 · Practical Application",
+  "kicker": "Clinical principle",
+  "title": "Treat the Line, Not the Spot",
+  "accent": "#2f6f8f",
+  "image": "key-principle.webp",
+  "orientation": "landscape",
+  "alt": "Composite anatomical panels linking arm lines and back muscles",
+  "summary": "The central principle of the guide: symptoms often sit at one end of a longer fascial conversation.",
+  "pathway": "Site of pain → local tissue → line-wide tension → convergence zone → movement pattern",
+  "hotspots": [
+   {
+    "n": 1,
+    "x": 80.0,
+    "y": 27.01,
+    "title": "Arm Lines",
+    "text": "Hand, wrist, elbow, and shoulder symptoms connect into the trunk."
+   },
+   {
+    "n": 2,
+    "x": 50.0,
+    "y": 35.2,
+    "title": "Functional diagonal",
+    "text": "Cross-body force transfer links opposite shoulder and hip."
+   },
+   {
+    "n": 3,
+    "x": 16.0,
+    "y": 62.22,
+    "title": "Posterior chain",
+    "text": "Foot, calf, hamstring, back, and head form one continuous reference map."
+   },
+   {
+    "n": 4,
+    "x": 80.0,
+    "y": 62.22,
+    "title": "Shoulder–neck interface",
+    "text": "Neck symptoms may involve arm and trunk lines."
+   }
+  ],
+  "notes": "<blockquote>“If someone has neck pain, look at their feet. If someone has plantar fasciitis, look at their thoracolumbar fascia.”</blockquote><p>The meridian model teaches that the site of pain is rarely treated as the sole source of the problem.</p>"
+ }
+]</script>
+<script id="image-index-data" type="application/json">[
+ {
+  "src": "overview.webp",
+  "title": "Complete meridian panorama",
+  "kicker": "Complete Map",
+  "target": "complete-map"
+ },
+ {
+  "src": "sbl.webp",
+  "title": "Superficial Back Line",
+  "kicker": "Primary meridian",
+  "target": "sbl"
+ },
+ {
+  "src": "sfl.webp",
+  "title": "Superficial Front Line",
+  "kicker": "Primary meridian",
+  "target": "sfl"
+ },
+ {
+  "src": "lateral.webp",
+  "title": "Lateral Line",
+  "kicker": "Primary meridian",
+  "target": "lateral-line"
+ },
+ {
+  "src": "spiral.webp",
+  "title": "Spiral Line",
+  "kicker": "Primary meridian",
+  "target": "spiral-line"
+ },
+ {
+  "src": "arms.webp",
+  "title": "Arm Lines",
+  "kicker": "Primary meridian",
+  "target": "arm-lines"
+ },
+ {
+  "src": "dfl.webp",
+  "title": "Deep Front Line",
+  "kicker": "Primary meridian",
+  "target": "deep-front-line"
+ },
+ {
+  "src": "functional.webp",
+  "title": "Functional Lines",
+  "kicker": "Primary meridian",
+  "target": "functional-lines"
+ },
+ {
+  "src": "plantar-stations.webp",
+  "title": "Posterior chain and plantar fascia detail",
+  "kicker": "Symptom guide",
+  "target": "plantar-fasciitis"
+ },
+ {
+  "src": "low-back.webp",
+  "title": "Thoracolumbar fascia posterior view",
+  "kicker": "Symptom guide",
+  "target": "low-back-pain"
+ },
+ {
+  "src": "forward-head.webp",
+  "title": "Forward head posture comparison",
+  "kicker": "Symptom guide",
+  "target": "forward-head-posture"
+ },
+ {
+  "src": "tension-headaches.webp",
+  "title": "Head and neck referral patterns",
+  "kicker": "Symptom guide",
+  "target": "tension-headaches"
+ },
+ {
+  "src": "tos.webp",
+  "title": "Thoracic outlet neurovascular anatomy",
+  "kicker": "Symptom guide",
+  "target": "thoracic-outlet"
+ },
+ {
+  "src": "tmj.webp",
+  "title": "Jaw and deep neck anatomy",
+  "kicker": "Symptom guide",
+  "target": "tmj-jaw"
+ },
+ {
+  "src": "hip-flexor.webp",
+  "title": "Psoas and iliacus anatomy",
+  "kicker": "Symptom guide",
+  "target": "hip-flexor-apt"
+ },
+ {
+  "src": "tlf.webp",
+  "title": "Thoracolumbar fascia connections",
+  "kicker": "Convergence point",
+  "target": "thoracolumbar-fascia"
+ },
+ {
+  "src": "sacrum.webp",
+  "title": "Pelvic force-closure view",
+  "kicker": "Convergence point",
+  "target": "sacrum-sacrotuberous"
+ },
+ {
+  "src": "suboccipital.webp",
+  "title": "Suboccipital and upper trapezius region",
+  "kicker": "Convergence point",
+  "target": "suboccipital-region"
+ },
+ {
+  "src": "scalene.webp",
+  "title": "SCM and scalene anatomy",
+  "kicker": "Convergence point",
+  "target": "scalene-scm-first-rib"
+ },
+ {
+  "src": "foot.webp",
+  "title": "Plantar fascia and heel detail",
+  "kicker": "Convergence point",
+  "target": "plantar-calcaneus"
+ },
+ {
+  "src": "fascial-sliding.webp",
+  "title": "Fascial layer cross-section",
+  "kicker": "Science",
+  "target": "fascial-sliding"
+ },
+ {
+  "src": "mfr-evidence.webp",
+  "title": "Myofascial release tissue target",
+  "kicker": "Science",
+  "target": "mfr-evidence"
+ },
+ {
+  "src": "goals.webp",
+  "title": "Fascial layers and matrix microstructure",
+  "kicker": "Science",
+  "target": "fascia-goals"
+ },
+ {
+  "src": "release-techniques.webp",
+  "title": "Manual and instrument-assisted release",
+  "kicker": "Practice",
+  "target": "release-techniques"
+ },
+ {
+  "src": "movement.webp",
+  "title": "Whole-chain movement under load",
+  "kicker": "Practice",
+  "target": "movement-approaches"
+ },
+ {
+  "src": "key-principle.webp",
+  "title": "Whole-body line connections",
+  "kicker": "Key principle",
+  "target": "treat-the-line"
+ }
+]</script>
+<script>
+const sections = JSON.parse(document.getElementById('section-data').textContent);
+const imageIndex = JSON.parse(document.getElementById('image-index-data').textContent);
+const partMeta = {
+ 'Orientation':['00','Orientation','How to read the visual language used throughout the guide.'],
+ 'Part 1 · The Complete Map':['01','The Complete Map','All major lines together, with direct jumps into each detailed section.'],
+ 'Part 2 · Primary Meridians':['02','Primary Meridians','The seven core fascial pathways and their clinically relevant hotspots.'],
+ 'Part 3 · Symptom Cross-Reference':['03','Symptom Cross-Reference','Common symptoms mapped back to lines, hotspots, and convergence zones.'],
+ 'Part 4 · Convergence Points':['04','Convergence Points','High-yield regions where multiple lines overlap.'],
+ 'Part 5 · Glide, Hydration & Restoration':['05','Glide, Hydration & Restoration','The tissue science behind fascial sliding and treatment goals.'],
+ 'Part 6 · Practical Application':['06','Practical Application','Release, movement, and whole-chain reasoning.']
+};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function partId(part){return part.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+function renderLegend(s,i){
+ return `<article class="guide-section" id="${s.id}" style="--accent:${s.accent}" data-search="${esc((s.title+' '+s.summary+' '+s.notes).toLowerCase())}">
+  <div class="section-head"><div><div class="section-kicker">${s.kicker}</div><h3>${s.title}</h3><p class="section-summary">${s.summary}</p></div><div class="section-count">Section ${String(i+1).padStart(2,'0')}</div></div>
+  <div class="section-layout"><div class="legend-visual"><div class="legend-content"><div class="legend-demo"><div class="legend-line"></div><div class="legend-dot one">1</div><div class="legend-dot two">2</div><div class="legend-dot three">3</div><div class="legend-label a">Anatomical station</div><div class="legend-label b">Symptom connection</div><div class="legend-label c">Convergence zone</div></div><div class="legend-caption"><div><strong>Image first</strong><span>The visual is the main reference surface.</span></div><div><strong>Numbered notes</strong><span>Markers match the explanations beside the image.</span></div><div><strong>Evidence scope</strong><span>Established anatomy and proposed models stay distinct.</span></div></div></div></div>
+  <aside class="annotation-panel"><div class="active-card"><span class="number">i</span><h4>How the annotations work</h4><p>Select a number on any image to bring its corresponding note forward. On the complete map, markers also jump to the relevant section.</p></div><div class="pathway"><strong>Reading rule</strong>Image → numbered marker → concise note → full reference details.</div><details open><summary>Guide legend</summary><div class="notes">${s.notes}</div></details></aside></div></article>`
+}
+function renderSection(s,i){
+ if(s.type==='legend') return renderLegend(s,i);
+ const hot = s.hotspots.map(h=>`<button class="hotspot ${h.target?'link':''} ${h.n===1?'active':''}" style="--x:${h.x}%;--y:${h.y}%" data-section="${s.id}" data-n="${h.n}" data-target="${h.target||''}" aria-label="${esc(h.title)}">${h.n}</button>`).join('');
+ const items = s.hotspots.map(h=>`<button class="annotation-item ${h.n===1?'active':''}" data-section="${s.id}" data-n="${h.n}" data-target="${h.target||''}"><span>${h.n}</span><strong>${esc(h.title)}</strong></button>`).join('');
+ const first=s.hotspots[0]||{n:'•',title:'Overview',text:s.summary};
+ return `<article class="guide-section" id="${s.id}" style="--accent:${s.accent}" data-search="${esc((s.title+' '+s.summary+' '+s.pathway+' '+s.notes).toLowerCase())}">
+  <div class="section-head"><div><div class="section-kicker">${s.kicker}</div><h3>${s.title}</h3><p class="section-summary">${s.summary}</p></div><div class="section-count">Section ${String(i+1).padStart(2,'0')}</div></div>
+  <div class="section-layout">
+   <figure class="visual-frame"><div class="image-shell ${s.orientation}"><img src="assets/${s.image}" alt="${esc(s.alt)}" loading="lazy">${hot}<button class="expand" data-src="assets/${s.image}" data-caption="${esc(s.title)} — ${esc(s.alt)}">Expand image</button></div><figcaption><span>Original artwork created for this guide.</span><span>${s.hotspots.length} annotations</span></figcaption></figure>
+   <aside class="annotation-panel"><div class="active-card" id="active-${s.id}"><span class="number">${first.n}</span><h4>${esc(first.title)}</h4><p>${esc(first.text)}</p></div><div class="annotation-list">${items}</div><div class="pathway"><strong>Pathway</strong>${s.pathway}</div><details><summary>Full reference notes</summary><div class="notes">${s.notes}</div></details></aside>
+  </div></article>`
+}
+let currentPart=''; const container=document.getElementById('sections');
+sections.forEach((s,i)=>{ if(s.part!==currentPart){ const [num,title,desc]=partMeta[s.part]||['',s.part,'']; container.insertAdjacentHTML('beforeend',`<div class="part-heading" id="${partId(s.part)}"><div class="part-number">${num}</div><div><h2>${title}</h2><p>${desc}</p></div></div>`); currentPart=s.part;} container.insertAdjacentHTML('beforeend',renderSection(s,i)); });
+document.getElementById('image-index-grid').innerHTML=imageIndex.map(item=>`<a class="index-card" href="#${item.target}"><div class="thumb"><img src="assets/${item.src}" alt="${esc(item.title)}" loading="lazy"></div><div class="meta"><small>${esc(item.kicker)}</small><strong>${esc(item.title)}</strong><span>Open related section →</span></div></a>`).join('');
+function activate(sectionId,n){ const s=sections.find(x=>x.id===sectionId); const h=s.hotspots.find(x=>String(x.n)===String(n)); if(!h) return; document.querySelectorAll(`[data-section="${sectionId}"]`).forEach(el=>el.classList.toggle('active',String(el.dataset.n)===String(n))); const card=document.getElementById(`active-${sectionId}`); if(card) card.innerHTML=`<span class="number">${h.n}</span><h4>${esc(h.title)}</h4><p>${esc(h.text)}</p>`; }
+document.addEventListener('click',e=>{ const btn=e.target.closest('.hotspot,.annotation-item'); if(btn){ if(btn.dataset.target){ const target=document.getElementById(btn.dataset.target); if(target) target.scrollIntoView({behavior:'smooth',block:'start'}); } activate(btn.dataset.section,btn.dataset.n); }});
+document.addEventListener('pointerenter',e=>{ const btn=e.target.closest?.('.hotspot'); if(btn && !btn.dataset.target) activate(btn.dataset.section,btn.dataset.n); },true);
+const lightbox=document.getElementById('lightbox'), limg=document.getElementById('lightbox-img'), lcap=document.getElementById('lightbox-caption');
+document.addEventListener('click',e=>{ const ex=e.target.closest('.expand'); if(ex){ limg.src=ex.dataset.src; limg.alt=ex.dataset.caption; lcap.textContent=ex.dataset.caption; lightbox.classList.add('open'); document.body.style.overflow='hidden'; } if(e.target===lightbox || e.target.closest('#lightbox-close')){ lightbox.classList.remove('open'); document.body.style.overflow=''; }});
+document.addEventListener('keydown',e=>{ if(e.key==='Escape' && lightbox.classList.contains('open')){ lightbox.classList.remove('open'); document.body.style.overflow=''; }});
+const search=document.getElementById('search'), empty=document.getElementById('empty-search');
+search.addEventListener('input',()=>{ const q=search.value.trim().toLowerCase(); let visible=0; document.querySelectorAll('.guide-section[data-search]').forEach(sec=>{ const show=!q || sec.dataset.search.includes(q); sec.classList.toggle('hidden-by-search',!show); if(show) visible++; }); empty.style.display=visible?'none':'block'; });
+const progress=document.getElementById('progress'), backtop=document.getElementById('backtop');
+addEventListener('scroll',()=>{ const max=document.documentElement.scrollHeight-innerHeight; progress.style.width=(max>0?scrollY/max*100:0)+'%'; backtop.classList.toggle('show',scrollY>700); },{passive:true});
+backtop.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>
