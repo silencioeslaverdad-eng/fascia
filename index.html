@@ -41,13 +41,14 @@ figcaption{display:flex;justify-content:space-between;gap:14px;color:var(--muted
 .annotation-list{display:grid;gap:8px;margin:16px 0}.annotation-item{border:1px solid var(--line);background:#fff;border-radius:15px;padding:11px 12px;display:grid;grid-template-columns:30px 1fr;gap:10px;text-align:left;cursor:pointer;color:var(--ink-soft)}.annotation-item span:first-child{width:28px;height:28px;border-radius:10px;background:color-mix(in srgb,var(--accent) 14%,white);color:var(--accent);display:grid;place-items:center;font-weight:950;font-size:.75rem}.annotation-item strong{font-size:.88rem;line-height:1.25}.annotation-item.active,.annotation-item:hover{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 7%,white);color:var(--ink)}
 .pathway{border-left:4px solid var(--accent);background:#fff;border-radius:0 16px 16px 0;padding:14px 16px;color:var(--ink-soft);font-size:.92rem;margin:14px 0}.pathway strong{display:block;color:var(--ink);font-size:.76rem;text-transform:uppercase;letter-spacing:.11em;margin-bottom:5px}
 details{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}summary{cursor:pointer;list-style:none;padding:15px 17px;font-weight:900;display:flex;justify-content:space-between;align-items:center}summary::-webkit-details-marker{display:none}summary::after{content:"+";font-size:1.4rem;color:var(--accent)}details[open] summary::after{content:"−"}.notes{padding:0 18px 18px;color:var(--ink-soft);font-size:.92rem}.notes p{margin:.65rem 0}.notes ul{margin:.5rem 0 .7rem;padding-left:1.25rem}.notes li{margin:.45rem 0}.notes blockquote{border-left:4px solid var(--accent);margin:10px 0;padding:8px 0 8px 16px;font-size:1.1rem;color:var(--ink);font-weight:750}.notes table{width:100%;border-collapse:collapse;font-size:.82rem;margin:10px 0}.notes th{text-align:left;color:var(--ink);background:#f3efe6}.notes th,.notes td{padding:9px;border:1px solid #e5dfd3;vertical-align:top}
+.manoeuvre-block{border-top:1px solid var(--line);padding:30px 0 10px;margin-top:14px}.manoeuvre-block:first-of-type{border-top:0;padding-top:10px;margin-top:0}.manoeuvre-head{display:flex;justify-content:space-between;gap:16px;align-items:baseline;flex-wrap:wrap;margin-bottom:8px}.manoeuvre-head h4{font-size:1.5rem;letter-spacing:-.025em;margin:0}.line-tags{color:var(--accent);font-weight:800;font-size:.82rem}.manoeuvre-para{max-width:960px;color:var(--ink-soft);margin:0 0 18px}.manoeuvre-body{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(340px,.65fr);gap:24px;align-items:start}.manoeuvre-stills{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.image-shell.still{aspect-ratio:auto}.image-shell.still img{height:auto;object-fit:contain}.pending-card{border:1px dashed var(--line);border-radius:18px;padding:16px 18px;background:#fff;color:var(--muted);margin:14px 0;font-size:.95rem}.pending-card strong{color:var(--ink);display:block;margin-bottom:3px;font-size:1.05rem}
 .legend-visual{border:1px solid var(--line);background:linear-gradient(145deg,#202b31,#11191d);border-radius:24px;min-height:560px;color:#fff;padding:28px;position:relative;overflow:hidden}.legend-visual::before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 25% 20%,rgba(66,111,159,.45),transparent 26%),radial-gradient(circle at 80% 75%,rgba(201,86,76,.28),transparent 30%)}.legend-content{position:relative;z-index:1;height:100%;display:grid;align-content:center;gap:22px}.legend-demo{position:relative;min-height:260px;border:1px solid rgba(255,255,255,.14);border-radius:22px;background:rgba(255,255,255,.06);overflow:hidden}.legend-line{position:absolute;left:15%;right:15%;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--red),var(--gold));transform:rotate(-18deg);top:48%}.legend-dot{position:absolute;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:950;border:3px solid #fff;box-shadow:0 10px 25px rgba(0,0,0,.25)}.legend-dot.one{left:22%;top:31%;background:var(--blue)}.legend-dot.two{left:48%;top:44%;background:var(--red)}.legend-dot.three{left:72%;top:58%;background:var(--gold)}.legend-label{position:absolute;background:#fff;color:var(--ink);border-radius:14px;padding:10px 12px;font-size:.82rem;font-weight:850;box-shadow:0 12px 30px rgba(0,0,0,.2)}.legend-label.a{left:7%;top:12%}.legend-label.b{left:40%;top:74%}.legend-label.c{right:6%;top:15%}.legend-caption{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.legend-caption div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:13px}.legend-caption strong{display:block}.legend-caption span{font-size:.8rem;color:rgba(255,255,255,.67)}
 .index-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}.index-card{text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}.index-card:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(24,33,38,.12)}.index-card .thumb{aspect-ratio:4/3;background:#f8f7f2}.index-card img{width:100%;height:100%;object-fit:cover}.index-card .meta{padding:13px}.index-card small{color:var(--accent);font-weight:900;text-transform:uppercase;letter-spacing:.09em}.index-card strong{display:block;margin-top:4px;line-height:1.25}.index-card span{display:block;margin-top:6px;color:var(--muted);font-size:.78rem}
 .source-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px}.source-visual{border-radius:24px;overflow:hidden;border:1px solid var(--line);background:#f8f7f2;display:grid;grid-template-columns:1fr 1fr}.source-visual img{width:100%;height:100%;object-fit:cover;min-height:210px}.source-visual img:first-child{grid-row:span 2}.source-cards{display:grid;gap:12px}.source-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}.source-card strong{display:block;margin-bottom:5px}.source-card p{margin:0;color:var(--ink-soft);font-size:.9rem}.disclaimer{margin-top:22px;background:#fff8e8;border:1px solid #ead69f;border-radius:20px;padding:18px;color:#6c5521}.rights{margin-top:12px;background:#eef5f7;border:1px solid #cfdfe4;border-radius:20px;padding:18px;color:#37545e}
 .footer{max-width:1480px;margin:0 auto;padding:34px 22px 60px;color:var(--muted);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.backtop{position:fixed;right:18px;bottom:18px;z-index:800;width:44px;height:44px;border:0;border-radius:16px;background:var(--ink);color:#fff;font-size:1.3rem;cursor:pointer;box-shadow:0 12px 30px rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:.2s}.backtop.show{opacity:1;pointer-events:auto}
 .lightbox{position:fixed;inset:0;background:rgba(12,17,20,.9);z-index:1200;display:none;align-items:center;justify-content:center;padding:28px}.lightbox.open{display:flex}.lightbox figure{max-width:min(1200px,96vw);max-height:92vh;margin:0;background:#f8f7f2;border-radius:24px;padding:16px;position:relative}.lightbox img{max-width:100%;max-height:82vh;object-fit:contain;border-radius:16px}.lightbox figcaption{color:var(--ink-soft);padding:12px 4px 0;margin:0}.lightbox-close{position:absolute;top:-16px;right:-16px;width:42px;height:42px;border:0;border-radius:50%;background:#fff;color:var(--ink);font-size:1.3rem;cursor:pointer;box-shadow:0 10px 25px rgba(0,0,0,.25)}
 .hidden-by-search{display:none!important}.empty-search{display:none;background:#fff;border:1px dashed var(--line);border-radius:22px;padding:30px;text-align:center;color:var(--muted)}
-@media (max-width:1100px){.hero{grid-template-columns:1fr}.section-layout{grid-template-columns:1fr}.annotation-panel{position:static}.source-layout{grid-template-columns:1fr}.toplinks{display:none}}
+@media (max-width:1100px){.hero{grid-template-columns:1fr}.section-layout{grid-template-columns:1fr}.manoeuvre-body{grid-template-columns:1fr}.annotation-panel{position:static}.source-layout{grid-template-columns:1fr}.toplinks{display:none}}
 @media (max-width:720px){.hero{padding-top:46px}.hero-stats{grid-template-columns:1fr}.control-strip{grid-template-columns:1fr}.quick-jump{justify-content:flex-start}.section-head{display:block}.section-count{display:inline-block;margin-top:12px}.hotspot{width:30px;height:30px;font-size:.72rem}.legend-caption{grid-template-columns:1fr}.part-heading{grid-template-columns:1fr}.hero-panel{padding:18px}.guide-section{border-radius:22px}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 @media print{.topbar,.control-strip,.backtop,.expand,.lightbox,.progress{display:none}.guide-section{box-shadow:none;break-inside:avoid}.annotation-panel{position:static}.section-layout{grid-template-columns:1fr}.notes details{display:block}}
@@ -74,7 +75,7 @@ details{background:#fff;border:1px solid var(--line);border-radius:18px;overflow
     <div class="hero-panel" aria-label="Guide overview">
       <div class="hero-panel-content">
         <img src="assets/overview.webp" alt="Overview of the major myofascial meridians">
-        <div class="hero-stats"><div class="stat"><strong>8</strong><span>mapped line views</span></div><div class="stat"><strong>5</strong><span>convergence zones</span></div><div class="stat"><strong>27</strong><span>annotated sections</span></div></div>
+        <div class="hero-stats"><div class="stat"><strong>8</strong><span>mapped line views</span></div><div class="stat"><strong>5</strong><span>convergence zones</span></div><div class="stat"><strong>28</strong><span>annotated sections</span></div></div>
       </div>
     </div>
   </section>
@@ -84,7 +85,7 @@ details{background:#fff;border:1px solid var(--line);border-radius:18px;overflow
   </section>
   <div class="main"><div id="sections"></div><div class="empty-search" id="empty-search">No matching sections. Try a broader anatomical term.</div>
     <section class="guide-section" id="image-index" style="--accent:#426f9f">
-      <div class="section-head"><div><div class="section-kicker">Part 7 · Visual archive</div><h3>Image Index</h3><p class="section-summary">The complete set of purpose-built visual assets. Select any image to jump to the section where it is used.</p></div><div class="section-count">26 assets</div></div>
+      <div class="section-head"><div><div class="section-kicker">Part 7 · Visual archive</div><h3>Image Index</h3><p class="section-summary">The complete set of purpose-built visual assets, plus the Fascia Manoeuvres practice stills. Select any image to jump to the section where it is used.</p></div><div class="section-count">27 assets</div></div>
       <div class="index-grid" id="image-index-grid"></div>
     </section>
     <section class="guide-section" id="references" style="--accent:#68737d">
@@ -100,7 +101,7 @@ details{background:#fff;border:1px solid var(--line);border-radius:18px;overflow
         </div>
       </div>
       <div class="disclaimer"><strong>Medical disclaimer:</strong> The Anatomy Trains model is a proposed clinical framework rather than universally established anatomical doctrine. This guide is for reference and education only and is not a substitute for diagnosis or treatment by a qualified healthcare professional.</div>
-      <div class="rights"><strong>Image-use note:</strong> Every illustration on this page is an original, purpose-built artwork created for this guide in a single consistent clinical style, with all labels and annotations kept as live text so they remain accurate, searchable, and selectable. No third-party source images are reproduced, so the page is clear for public hosting.</div>
+      <div class="rights"><strong>Image-use note:</strong> Every illustration on this page is an original, purpose-built artwork created for this guide in a single consistent clinical style, with all labels and annotations kept as live text so they remain accurate, searchable, and selectable. The Fascia Manoeuvres section uses still frames from the author’s own practice recordings, likewise original works. No third-party source images are reproduced, so the page is clear for public hosting.</div>
       <div class="rights"><strong>Copyright &amp; permitted use:</strong> © 2026 PaulAbram · <a href="https://paulabram.io">paulabram.io</a>. All text and illustrations on this page are original works and may not be copied, scraped, republished, redistributed, or used to train AI models without prior written permission. You are welcome to link to this page; you are not permitted to reproduce it. All illustrations carry an embedded watermark identifying this site as their source.</div>
     </section>
   </div>
@@ -1415,7 +1416,7 @@ details{background:#fff;border:1px solid var(--line);border-radius:18px;overflow
   "orientation": "landscape",
   "alt": "Loaded whole-body positions showing fascial lines under movement",
   "summary": "Movement turns passive tissue change into usable capacity by loading entire chains across multiple planes.",
-  "pathway": "Yoga / Pilates → functional whole-chain training → eccentric loading → tendon-fascia adaptation",
+  "pathway": "Yoga · Tai Chi · Qigong → functional whole-chain training → eccentric loading → tendon-fascia adaptation",
   "hotspots": [
    {
     "n": 1,
@@ -1453,7 +1454,253 @@ details{background:#fff;border:1px solid var(--line);border-radius:18px;overflow
     "text": "Foot control completes the chain from the ground up."
    }
   ],
-  "notes": "<ul><li><strong>Yoga / Pilates:</strong> multi-planar loading of fascial lines.</li><li><strong>Functional training:</strong> whole-chain movements rather than isolated muscle exercises.</li><li><strong>Eccentric loading:</strong> particularly useful for tendon-fascia interfaces.</li></ul>"
+  "notes": "<ul><li><strong>Yoga, Tai Chi & Qigong:</strong> multi-planar loading of fascial lines — adjunct practices that can incorporate the Fascia Manoeuvres detailed in the next section.</li><li><strong>Functional training:</strong> whole-chain movements rather than isolated muscle exercises.</li><li><strong>Eccentric loading:</strong> particularly useful for tendon-fascia interfaces.</li></ul>"
+ },
+ {
+  "id": "fascia-manoeuvres",
+  "type": "manoeuvres",
+  "part": "Part 6 · Practical Application",
+  "kicker": "Practical application",
+  "title": "Fascia Manoeuvres",
+  "accent": "#7b67a8",
+  "summary": "A working library of Fascia Manoeuvres, each illustrated with the fascial lines it loads — showing which tissue is being accessed, and whether it is being stretched, twisted, compressed, or sheared.",
+  "pathway": "Position → line engagement → stretch · twist · compression → glide and hydration",
+  "manoeuvres": [
+   {
+    "id": "totally-twisted",
+    "name": "Be Totally Twisted",
+    "lines": "Spiral Line · Deep Front Line · Thoracolumbar fascia",
+    "paragraph": "The signature whole-body twist: legs crossed, one hand gripping the opposite shoulder and the other locked into the armpit, pelvic floor lifted. Staged inhales wind the position, each exhale releases the rotation deeper, and the hold finishes with a forward hinge over the crossed legs. The Spiral Line is loaded from foot to skull.",
+    "stills": [
+     {
+      "image": "fmg-totally-twisted.webp",
+      "alt": "Be Totally Twisted — full-body twist with the head counter-rotated against the shoulders",
+      "caption": "The hold — crossed base, locked arms, head turned against the shoulders.",
+      "hotspots": [
+       {"n": 1, "x": 45, "y": 90, "title": "Crossed base", "text": "The crossed legs lock the lower body, giving the twist something to wind against.", "target": "spiral-line"},
+       {"n": 2, "x": 44, "y": 55, "title": "Wound pelvis", "text": "Pelvic floor lifted, pelvis engaged — the Spiral Line winds around a stable base."},
+       {"n": 3, "x": 56, "y": 27, "title": "Shoulder grip and armpit lock", "text": "One hand grips the opposite shoulder while the other locks into the armpit, pinning the arm lines across the chest.", "target": "arm-lines"},
+       {"n": 4, "x": 45, "y": 14, "title": "Counter-rotation", "text": "The head turns against the shoulders, drawing the neck fascia into the spiral.", "target": "scalene-scm-first-rib"}
+      ]
+     }
+    ]
+   },
+   {
+    "id": "anti-gravity",
+    "name": "Anti-Gravity",
+    "lines": "Superficial Front Line · Superficial Back Line · Arm Lines",
+    "paragraph": "The standing decompression: hands clasped behind the head, elbows wide, and the whole column lifted long against gravity while the knees stay soft. The front and back lines are lengthened axially — the opposite of the collapsed posture they spend all day holding.",
+    "stills": [
+     {
+      "image": "fmg-anti-gravity.webp",
+      "alt": "Anti-Gravity — standing axial lift with hands clasped behind the head",
+      "caption": "The lift — elbows wide, column long, knees soft.",
+      "hotspots": [
+       {"n": 1, "x": 50, "y": 12, "title": "Clasped crown", "text": "Hands clasped behind the head open the upper ribs and lift the arm lines.", "target": "arm-lines"},
+       {"n": 2, "x": 50, "y": 38, "title": "Axial lift", "text": "The spine lengthens upward against gravity — extension without compression.", "target": "sfl"},
+       {"n": 3, "x": 42, "y": 68, "title": "Soft-knee base", "text": "Slightly bent knees keep the lift driven from the ground rather than the low back."}
+      ]
+     }
+    ]
+   },
+   {
+    "id": "swinger",
+    "name": "Swinger",
+    "lines": "Spiral Line · Functional Lines · Thoracolumbar fascia",
+    "paragraph": "A standing rotational swing: the arm wraps across the body to the opposite shoulder while the torso winds into rotation, first to one side and then the other. The wrap pins the arm lines against the chest so the rotation carries through the Spiral Line into the thoracolumbar fascia rather than staying local to the shoulders.",
+    "stills": [
+     {
+      "image": "fmg-swinger.webp",
+      "alt": "Swinger — the wound position: arm wrapped to the opposite shoulder as the torso rotates",
+      "caption": "The wind — arm pinned across the chest, torso rotated over a stable pelvis.",
+      "hotspots": [
+       {"n": 1, "x": 28, "y": 18, "title": "Shoulder anchor", "text": "The hand fixes at the opposite shoulder, tensioning the Superficial Front Arm Line across the chest.", "target": "arm-lines"},
+       {"n": 2, "x": 45, "y": 45, "title": "Winding the trunk", "text": "Rotation winds the Spiral Line and the oblique abdominal fascia around a stable pelvis.", "target": "spiral-line"},
+       {"n": 3, "x": 50, "y": 58, "title": "Stable pelvis", "text": "Soft knees and a level pelvis let the twist pass through the hips instead of jamming at the low back."}
+      ]
+     }
+    ]
+   },
+   {
+    "id": "pullover",
+    "name": "Pullover",
+    "lines": "Superficial Front Arm Line · Superficial Back Line · Lateral Line",
+    "paragraph": "Two ideas in one manoeuvre: a standing ‘pullover’ bind that wraps the arm across the chest and grips the far rib cage, followed by a released forward fold. The bind loads the front of the arm–chest chain; the fold then hands the work to the entire Superficial Back Line.",
+    "stills": [
+     {
+      "image": "fmg-pullover.webp",
+      "alt": "Pullover — the standing bind, arm wrapped across the chest gripping the far ribs",
+      "caption": "The bind — arm wrapped, far ribs gripped, front arm–chest chain loaded.",
+      "hotspots": [
+       {"n": 1, "x": 40, "y": 25, "title": "Cross-chest bind", "text": "The wrapped arm tensions the Superficial Front Arm Line and the pectoral fascia.", "target": "arm-lines"},
+       {"n": 2, "x": 62, "y": 36, "title": "Grip at the ribs", "text": "The far hand anchors at the lateral rib cage, tying the arm line into the Lateral Line.", "target": "lateral-line"},
+       {"n": 3, "x": 63, "y": 50, "title": "Lateral tie-in", "text": "From the rib grip the load passes down the Lateral Line toward the pelvis."}
+      ]
+     }
+    ]
+   },
+   {
+    "id": "pretzel-squat",
+    "name": "Pretzel Squat",
+    "lines": "Spiral Line · Lateral Line · Deep Front Line",
+    "paragraph": "A T-stance, a palm on the base of the spine, then a rotation toward the back foot with the eyes over the opposite shoulder — and a hinge down into a full squat, arms swapped at the bottom. Six or more slow breaths per side load the Spiral and Lateral Lines under the body’s own weight.",
+    "stills": [
+     {
+      "image": "fmg-pretzel-squat.webp",
+      "alt": "Pretzel Squat — deep rotated squat with the palm anchored at the base of the spine",
+      "caption": "The drop — rotated, hinged, and breathing at the bottom.",
+      "hotspots": [
+       {"n": 1, "x": 58, "y": 25, "title": "Sacral palm", "text": "The palm on the base of the spine anchors the pelvis so the rotation happens above it.", "target": "thoracolumbar-fascia"},
+       {"n": 2, "x": 70, "y": 60, "title": "Deep rotated base", "text": "The wide, deep squat loads the leg lines while the torso rotates against them."},
+       {"n": 3, "x": 22, "y": 50, "title": "Eyes over the shoulder", "text": "Looking back over the opposite shoulder carries the spiral all the way through the neck.", "target": "spiral-line"}
+      ]
+     }
+    ]
+   },
+   {
+    "id": "organ-reset",
+    "name": "Organ Reset",
+    "lines": "Deep Front Line · Abdominal fascia",
+    "paragraph": "Gentle, patient self-contact to the abdomen: the hands work slowly into the fascial layers around the organs, inviting the visceral fascia to slide and settle. Pressure stays soft throughout — this is negotiation, not force.",
+    "stills": [
+     {
+      "image": "fmg-organ-reset.webp",
+      "alt": "Organ Reset — gentle two-handed contact into the abdomen",
+      "caption": "The contact — slow hands, soft pressure, quiet breath.",
+      "hotspots": [
+       {"n": 1, "x": 46, "y": 44, "title": "Abdominal contact", "text": "Slow, gentle hand work into the abdominal fascia below the ribs — the territory of the Deep Front Line’s visceral segment.", "target": "deep-front-line"},
+       {"n": 2, "x": 49, "y": 35, "title": "Visceral fascia", "text": "The fascia around the organs is continuous with the abdominal wall — contact here influences the whole inner chain."},
+       {"n": 3, "x": 50, "y": 15, "title": "Quiet head", "text": "The head bows and the breath slows — visceral work responds to calm, not force."}
+      ]
+     }
+    ]
+   },
+   {
+    "id": "elbow-torque",
+    "name": "Elbow Torque",
+    "lines": "Spiral Line · Deep Front Arm Line · Scalene / SCM region",
+    "paragraph": "One hand anchors the side of the neck; the other grips the working elbow and torques it across the body. The result is a spiral wound from the neck, through the shoulder girdle and arm lines, down into the trunk.",
+    "stills": [
+     {
+      "image": "fmg-elbow-torque.webp",
+      "alt": "Elbow Torque — neck anchored, elbow gripped and torqued across the body",
+      "caption": "The torque — neck fixed, elbow wound across, spiral through the trunk.",
+      "hotspots": [
+       {"n": 1, "x": 32, "y": 18, "title": "Neck anchor", "text": "Fingers fix the side of the neck — the scalene / SCM fascial triangle becomes the top of the spiral.", "target": "scalene-scm-first-rib"},
+       {"n": 2, "x": 63, "y": 30, "title": "Torqued elbow", "text": "The opposite hand winds the elbow across the body, spiralling the Deep Front Arm Line.", "target": "arm-lines"},
+       {"n": 3, "x": 45, "y": 45, "title": "Spiral through the trunk", "text": "From the elbow the wind continues across the torso toward the opposite hip.", "target": "spiral-line"}
+      ]
+     }
+    ]
+   },
+   {
+    "id": "overhead-elbow-torque",
+    "name": "Overhead Elbow Torque",
+    "lines": "Lateral Line · Arm Lines · Lat–thoracolumbar junction",
+    "paragraph": "The same elbow-led idea taken overhead: the hands grip opposite elbows above the head, then the whole column side-bends. Elevating the arms lengthens the lat–thoracolumbar junction, and the side bend stretches the full Lateral Line of the elongated side.",
+    "stills": [
+     {
+      "image": "fmg-overhead-elbow-torque.webp",
+      "alt": "Overhead Elbow Torque — arms overhead in the elbow grip, column arced sideways",
+      "caption": "The arc — overhead ring held while the column bends.",
+      "hotspots": [
+       {"n": 1, "x": 57, "y": 5, "title": "Elbow grip overhead", "text": "Gripping the opposite elbows fixes the arms into a closed ring above the head."},
+       {"n": 2, "x": 47, "y": 40, "title": "Elongated side", "text": "The Lateral Line of the long side — from rib cage to pelvis — takes the stretch.", "target": "lateral-line"},
+       {"n": 3, "x": 50, "y": 92, "title": "Grounded feet", "text": "The feet stay planted so the bend is a true lateral arc, not a collapse."}
+      ]
+     }
+    ]
+   },
+   {
+    "id": "shoulder-release",
+    "name": "Shoulder Release",
+    "lines": "Superficial Front Arm Line · Deep Front Arm Line · Thoracic-outlet region",
+    "paragraph": "A self-applied release for the front of the shoulder: the arm is held out long to tension its fascial lines while the opposite hand works across the pectoral fascia, from the armpit toward the sternum.",
+    "stills": [
+     {
+      "image": "fmg-shoulder-release.webp",
+      "alt": "Shoulder Release — arm held long while the opposite hand works across the chest",
+      "caption": "The contact — arm long, fingertips working the pec under tension.",
+      "hotspots": [
+       {"n": 1, "x": 11, "y": 21, "title": "Extended arm", "text": "Holding the arm out long pre-tensions the Superficial Front Arm Line before contact begins."},
+       {"n": 2, "x": 47, "y": 30, "title": "Pectoral contact", "text": "Slow fingertip work across the pec while the arm line is under tension shears the fascial layers against each other.", "target": "arm-lines"},
+       {"n": 3, "x": 54, "y": 28, "title": "Toward the outlet", "text": "Working inward approaches the pec minor region — the fascial bottleneck of the thoracic outlet.", "target": "thoracic-outlet"}
+      ]
+     }
+    ]
+   },
+   {
+    "id": "chest-release",
+    "name": "Chest Release",
+    "lines": "Superficial Front Line (chest) · Pectoral fascia · Functional Lines",
+    "paragraph": "A moving release for the chest: the arm rises on a diagonal, thumb up, while the opposite hand pins the pectoral fascia at the armpit, then the arm sweeps down and back to open the front of the shoulder horizontally. The chest fascia is stretched beneath a sustained contact.",
+    "stills": [
+     {
+      "image": "fmg-chest-release.webp",
+      "alt": "Chest Release — arm raised high on a diagonal with the chest fascia pinned",
+      "caption": "The raise — thumb up, chest pinned, diagonal loaded.",
+      "hotspots": [
+       {"n": 1, "x": 30, "y": 7, "title": "Diagonal raise", "text": "The raised arm tensions the front of the shoulder and the chest portion of the Superficial Front Line.", "target": "sfl"},
+       {"n": 2, "x": 47, "y": 27, "title": "Pinned chest", "text": "The working hand anchors the pectoral fascia so the raise stretches it rather than sliding it."},
+       {"n": 3, "x": 57, "y": 40, "title": "Functional diagonal", "text": "From the pinned pec the stretch runs diagonally across the torso — the Functional Line path.", "target": "functional-lines"}
+      ]
+     }
+    ]
+   },
+   {
+    "id": "vagus-nerve-release",
+    "name": "Vagus Nerve Release",
+    "lines": "SCM / scalene fascia · Carotid sheath region · Deep Front Line (neck)",
+    "paragraph": "Light, slow contact around the side and front of the neck — the fascial territory of the SCM and scalenes, which wrap the carotid sheath where the vagus nerve descends. Pressure stays feather-light throughout: the aim is to free the sliding surfaces of the neck fascia, never to compress the structures inside.",
+    "stills": [
+     {
+      "image": "fmg-vagus-nerve-release.webp",
+      "alt": "Vagus Nerve Release — feather-light fingertip contact along the side of the neck",
+      "caption": "Lateral neck — feather-light tracking of the SCM and scalene fascia.",
+      "hotspots": [
+       {"n": 1, "x": 48, "y": 16, "title": "SCM / scalene contact", "text": "Feather-light contact along the lateral neck — the fascial sleeve around the carotid sheath, where the vagus nerve travels.", "target": "scalene-scm-first-rib"},
+       {"n": 2, "x": 51, "y": 10, "title": "Soft head position", "text": "The head stays long and quiet so the neck fascia can glide under the fingers."}
+      ]
+     }
+    ]
+   },
+   {
+    "id": "getting-cheeky",
+    "name": "Getting Cheeky",
+    "lines": "Masseteric fascia · Temporal fascia · Galea aponeurotica",
+    "paragraph": "Direct fascial work for the face and head: the cheeks are drawn gently away from the jaw, the temples and forehead are mobilised, and the scalp is lifted and slid over the skull. Each contact targets a different fascial layer of the head.",
+    "stills": [
+     {
+      "image": "fmg-getting-cheeky.webp",
+      "alt": "Getting Cheeky — drawing the cheeks gently away from the jaw",
+      "caption": "The draw — cheeks eased away from the masseter, then temples.",
+      "hotspots": [
+       {"n": 1, "x": 41, "y": 16, "title": "Cheek draw", "text": "Drawing the cheek away from the jaw mobilises the fascial layers over the masseter — relevant to jaw-clenching patterns.", "target": "tmj-jaw"},
+       {"n": 2, "x": 46, "y": 10, "title": "Temple contact", "text": "Work at the temple addresses the temporal fascia, a common player in tension-type head pain.", "target": "tension-headaches"}
+      ]
+     }
+    ]
+   },
+   {
+    "id": "platysma-stretch",
+    "name": "Platysma Stretch",
+    "lines": "Platysma · Superficial neck fascia · Superficial Front Line (upper)",
+    "paragraph": "The platysma is a broad sheet of muscle and fascia running from the upper chest to the jaw. Crossing the hands on the chest anchors its lower end; lifting and turning the chin then stretches the sheet lengthwise, side to side.",
+    "stills": [
+     {
+      "image": "fmg-platysma-stretch.webp",
+      "alt": "Platysma Stretch — chest anchored with crossed hands, chin lifted and turned",
+      "caption": "The stretch — anchored at the chest, lengthened to the jaw.",
+      "hotspots": [
+       {"n": 1, "x": 56, "y": 25, "title": "Chest anchor", "text": "Crossed hands fix the lower end of the platysma and the superficial chest fascia."},
+       {"n": 2, "x": 45, "y": 17, "title": "Lengthened platysma", "text": "With the chest anchored, lifting the chin stretches the platysma from collarbone to jaw — the superficial continuation of the front line into the neck.", "target": "sfl"},
+       {"n": 3, "x": 41, "y": 10, "title": "Lift and turn", "text": "Adding rotation stretches one side of the sheet more than the other — useful when the two sides differ."}
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "<ul><li><strong>How to read this section:</strong> each manoeuvre is illustrated with the fascial lines it loads shown in blue; numbered markers identify the fascia being accessed and what the position is doing to it — stretch, twist, compression, or shear.</li><li><strong>Dose:</strong> move slowly, breathe throughout, and keep every position below the threshold of strain — fascial change responds to sustained, tolerable load, not force.</li><li><strong>Neck and face caution:</strong> the Vagus Nerve Release and the facial manoeuvres use feather-light contact only; never apply pressure over the front or side of the neck beyond gentle skin contact.</li><li><strong>Adjunct practices:</strong> yoga, Tai Chi, and Qigong all incorporate comparable whole-chain positions and can serve as containers for these manoeuvres — see Movement Approaches.</li><li><strong>Source material:</strong> illustrations are rendered from the author’s own practice recordings, with the loaded fascial lines overlaid in blue.</li></ul>"
  },
  {
   "id": "treat-the-line",
@@ -1652,6 +1899,12 @@ details{background:#fff;border:1px solid var(--line);border-radius:18px;overflow
   "target": "movement-approaches"
  },
  {
+  "src": "fm-elbow-torque-1.webp",
+  "title": "Fascia Manoeuvres practice stills",
+  "kicker": "Practice",
+  "target": "fascia-manoeuvres"
+ },
+ {
   "src": "key-principle.webp",
   "title": "Whole-body line connections",
   "kicker": "Key principle",
@@ -1678,8 +1931,33 @@ function renderLegend(s,i){
   <div class="section-layout"><div class="legend-visual"><div class="legend-content"><div class="legend-demo"><div class="legend-line"></div><div class="legend-dot one">1</div><div class="legend-dot two">2</div><div class="legend-dot three">3</div><div class="legend-label a">Anatomical station</div><div class="legend-label b">Symptom connection</div><div class="legend-label c">Convergence zone</div></div><div class="legend-caption"><div><strong>Image first</strong><span>The visual is the main reference surface.</span></div><div><strong>Numbered notes</strong><span>Markers match the explanations beside the image.</span></div><div><strong>Evidence scope</strong><span>Established anatomy and proposed models stay distinct.</span></div></div></div></div>
   <aside class="annotation-panel"><div class="active-card"><span class="number">i</span><h4>How the annotations work</h4><p>Select a number on any image to bring its corresponding note forward. On the complete map, markers also jump to the relevant section.</p></div><div class="pathway"><strong>Reading rule</strong>Image → numbered marker → concise note → full reference details.</div><details open><summary>Guide legend</summary><div class="notes">${s.notes}</div></details></aside></div></article>`
 }
+function renderManoeuvres(s,i){
+ const searchText=[s.title,s.summary,s.pathway,s.notes,...s.manoeuvres.flatMap(m=>[m.name,m.lines||'',m.paragraph||'',m.pending||'',...(m.stills||[]).flatMap(st=>[st.alt,st.caption,...st.hotspots.map(h=>h.title+' '+h.text)])])].join(' ').toLowerCase();
+ const blocks=s.manoeuvres.map(m=>{
+  if(m.pending) return `<div class="pending-card" id="fm-${m.id}"><strong>${esc(m.name)}</strong>${esc(m.pending)}</div>`;
+  const subId=`${s.id}--${m.id}`;
+  const hs=m.stills.flatMap(st=>st.hotspots);
+  subSections[subId]={id:subId,hotspots:hs};
+  const first=hs[0];
+  const stills=m.stills.map(st=>{
+   const hot=st.hotspots.map(h=>`<button class="hotspot ${h.target?'link':''}" style="--x:${h.x}%;--y:${h.y}%" data-section="${subId}" data-n="${h.n}" data-target="${h.target||''}" aria-label="${esc(h.title)}">${h.n}</button>`).join('');
+   return `<figure class="visual-frame"><div class="image-shell still"><img src="assets/${st.image}" alt="${esc(st.alt)}" loading="lazy">${hot}<button class="expand" data-src="assets/${st.image}" data-caption="${esc(m.name)} — ${esc(st.alt)}">Expand image</button></div><figcaption><span>${esc(st.caption)}</span><span>Frame from practice recording</span></figcaption></figure>`;
+  }).join('');
+  const items=hs.map(h=>`<button class="annotation-item" data-section="${subId}" data-n="${h.n}" data-target="${h.target||''}"><span>${h.n}</span><strong>${esc(h.title)}</strong></button>`).join('');
+  return `<section class="manoeuvre-block" id="fm-${m.id}">
+   <div class="manoeuvre-head"><h4>${esc(m.name)}</h4><div class="line-tags">${esc(m.lines||'')}</div></div>
+   <p class="manoeuvre-para">${esc(m.paragraph)}</p>
+   <div class="manoeuvre-body"><div class="manoeuvre-stills">${stills}</div>
+   <aside class="annotation-panel"><div class="active-card" id="active-${subId}"><span class="number">${first.n}</span><h4>${esc(first.title)}</h4><p>${esc(first.text)}</p></div><div class="annotation-list">${items}</div></aside></div></section>`;
+ }).join('');
+ return `<article class="guide-section" id="${s.id}" style="--accent:${s.accent}" data-search="${esc(searchText)}">
+  <div class="section-head"><div><div class="section-kicker">${s.kicker}</div><h3>${s.title}</h3><p class="section-summary">${s.summary}</p></div><div class="section-count">Section ${String(i+1).padStart(2,'0')}</div></div>
+  ${blocks}
+  <div class="pathway"><strong>Pathway</strong>${s.pathway}</div><details><summary>Full reference notes</summary><div class="notes">${s.notes}</div></details></article>`
+}
 function renderSection(s,i){
  if(s.type==='legend') return renderLegend(s,i);
+ if(s.type==='manoeuvres') return renderManoeuvres(s,i);
  const hot = s.hotspots.map(h=>`<button class="hotspot ${h.target?'link':''} ${h.n===1?'active':''}" style="--x:${h.x}%;--y:${h.y}%" data-section="${s.id}" data-n="${h.n}" data-target="${h.target||''}" aria-label="${esc(h.title)}">${h.n}</button>`).join('');
  const items = s.hotspots.map(h=>`<button class="annotation-item ${h.n===1?'active':''}" data-section="${s.id}" data-n="${h.n}" data-target="${h.target||''}"><span>${h.n}</span><strong>${esc(h.title)}</strong></button>`).join('');
  const first=s.hotspots[0]||{n:'•',title:'Overview',text:s.summary};
@@ -1690,10 +1968,11 @@ function renderSection(s,i){
    <aside class="annotation-panel"><div class="active-card" id="active-${s.id}"><span class="number">${first.n}</span><h4>${esc(first.title)}</h4><p>${esc(first.text)}</p></div><div class="annotation-list">${items}</div><div class="pathway"><strong>Pathway</strong>${s.pathway}</div><details><summary>Full reference notes</summary><div class="notes">${s.notes}</div></details></aside>
   </div></article>`
 }
+const subSections={};
 let currentPart=''; const container=document.getElementById('sections');
 sections.forEach((s,i)=>{ if(s.part!==currentPart){ const [num,title,desc]=partMeta[s.part]||['',s.part,'']; container.insertAdjacentHTML('beforeend',`<div class="part-heading" id="${partId(s.part)}"><div class="part-number">${num}</div><div><h2>${title}</h2><p>${desc}</p></div></div>`); currentPart=s.part;} container.insertAdjacentHTML('beforeend',renderSection(s,i)); });
 document.getElementById('image-index-grid').innerHTML=imageIndex.map(item=>`<a class="index-card" href="#${item.target}"><div class="thumb"><img src="assets/${item.src}" alt="${esc(item.title)}" loading="lazy"></div><div class="meta"><small>${esc(item.kicker)}</small><strong>${esc(item.title)}</strong><span>Open related section →</span></div></a>`).join('');
-function activate(sectionId,n){ const s=sections.find(x=>x.id===sectionId); const h=s.hotspots.find(x=>String(x.n)===String(n)); if(!h) return; document.querySelectorAll(`[data-section="${sectionId}"]`).forEach(el=>el.classList.toggle('active',String(el.dataset.n)===String(n))); const card=document.getElementById(`active-${sectionId}`); if(card) card.innerHTML=`<span class="number">${h.n}</span><h4>${esc(h.title)}</h4><p>${esc(h.text)}</p>`; }
+function activate(sectionId,n){ const s=sections.find(x=>x.id===sectionId)||subSections[sectionId]; const h=s&&s.hotspots.find(x=>String(x.n)===String(n)); if(!h) return; document.querySelectorAll(`[data-section="${sectionId}"]`).forEach(el=>el.classList.toggle('active',String(el.dataset.n)===String(n))); const card=document.getElementById(`active-${sectionId}`); if(card) card.innerHTML=`<span class="number">${h.n}</span><h4>${esc(h.title)}</h4><p>${esc(h.text)}</p>`; }
 document.addEventListener('click',e=>{ const btn=e.target.closest('.hotspot,.annotation-item'); if(btn){ if(btn.dataset.target){ const target=document.getElementById(btn.dataset.target); if(target) target.scrollIntoView({behavior:'smooth',block:'start'}); } activate(btn.dataset.section,btn.dataset.n); }});
 document.addEventListener('pointerenter',e=>{ const btn=e.target.closest?.('.hotspot'); if(btn && !btn.dataset.target) activate(btn.dataset.section,btn.dataset.n); },true);
 const lightbox=document.getElementById('lightbox'), limg=document.getElementById('lightbox-img'), lcap=document.getElementById('lightbox-caption');
